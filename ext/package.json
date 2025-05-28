@@ -1,0 +1,100 @@
+{
+  "name": "ext",
+  "namespace": "Ext",
+  "format": "1",
+  "version": "7.8.0.33",
+  "compatVersion": "7.8.0",
+  "creator": "Sencha",
+  "summary": "Ext JS",
+  "detailedDescription": "Sencha Ext JS JavaScript Framework",
+  "type": "framework",
+  "signatures": [
+    {
+      "name": "Sencha",
+      "uuid": "76c71712-41cd-4537-a7c8-b6bbb67f2f49",
+      "created": "2023-12-04T17:49:26Z",
+      "algorithm": "SHA1withRSA",
+      "nonce": "0zWVR7yv9to\u003d",
+      "signature": "oLLRb9d6wshNNL9uZZKV2vyGeSD9PZbcGHCccuVVvGK2rtN9IZmdtEJHSbvoEHqFnHCYlDZOcBJJemgipSzjzdZU6eTrkUepUTw+ZZPoT5lrJGkn1HSLaGdE543KkB7YI8VD+dsHPn0n/9OY7EMQlLSE8Rw929wDNHA6mEbziSz/ZJCc1Au1tQk2l3+19nR+hc1PJun0q9DZyAvadeN4rSayEq1Xv5nt9UNZqTBVrz4BPbaGzcXapIowRn82A0rOqNEHzz+VpPExSK5u8LZvA3ByjZ7HdphLnxf0emHSOef3Yn1EqzAYqRa+SjfPRTq+tA08Eja8BMQTrhSgCRRj6w\u003d\u003d"
+    },
+    {
+      "name": "Sencha",
+      "uuid": "81db158e-24cc-404e-8a0d-dd5eaecadc8e",
+      "created": "2023-12-05T06:15:28Z",
+      "algorithm": "SHA1withRSA",
+      "nonce": "dsiRspQm44M\u003d",
+      "signature": "BEDFV5SzRkdXQriE9uC0K1sCHMD26CagMXs1Kr0PSTjazkdfo9Coo7lwZbhFGka5qXV+fBKYKQPGxxSLYoVpfXJi2w9hmOQ9olh42uoi9oCUYHyLasnlm6TFrdDVRyOZ0A4DZDlFSXZnKbwew5O+LoN6KCyAiz3H3fPyUpWBHmf8LVkG2RbUtp0LD1dOjxccYBz6WFyfcKpFiD67GcPmU3ohfbR4BxjjeA0lsJ+he7RGqaz97kWh+5jLo3AiaoUSVDejqTLV3U3mvRJajMsdqmKQSkzOHryPYvsla+PrTV2S74Q1l0artWeWJ0VSFhMhx5/WB+ef8Dqnqro2Fczn+g\u003d\u003d"
+    }
+  ],
+  "output": "${package.dir}/build",
+  "build": {
+    "dir": "${package.output.base}"
+  },
+  "sass": {
+    "fashion": true,
+    "namespace": "Ext",
+    "etc": "${package.dir}/sass/etc/all.scss",
+    "var": "${package.dir}/sass/var",
+    "src": "${package.dir}/sass/src"
+  },
+  "classpath": "${package.dir}/src",
+  "overrides": "${package.dir}/overrides",
+  "resource": {
+    "paths": [
+      "resources"
+    ]
+  },
+  "example": {
+    "path": [
+      "examples",
+      "templates"
+    ],
+    "apps": [
+      "admin-dashboard",
+      "executive-dashboard",
+      "feed-viewer",
+      "kitchensink",
+      "calendar",
+      "classic/desktop",
+      "classic/ticket-app",
+      "classic/portal",
+      "classic/simple-tasks",
+      "classic/responsive-app",
+      "classic/aria",
+      "modern/addressbook",
+      "modern/blackberry",
+      "modern/energy",
+      "modern/stockapp",
+      "modern/states",
+      "modern/geocongress",
+      "modern/oreilly"
+    ]
+  },
+  "subpkgs": {
+    "dir": "${package.dir}",
+    "packages": [
+      "classic/classic",
+      "modern/modern",
+      "packages/charts",
+      "packages/amf",
+      "packages/soap",
+      "packages/ux",
+      "packages/google",
+      "packages/legacy",
+      "packages/font-awesome",
+      "packages/font-pictos",
+      "packages/font-ext"
+    ]
+  },
+  "language": {
+    "js": {
+      "input": {
+        "version": "ES5"
+      }
+    }
+  },
+  "properties": {
+    "skip.sass": 1,
+    "skip.slice": 1
+  }
+}
