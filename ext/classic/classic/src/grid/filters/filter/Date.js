@@ -7,7 +7,7 @@
  * Example Date Filter Usage:
  * 
  *     @example 
- *     var shows = Ext.create('Ext.data.Store', {
+ *     var shows = Ext.create('Ext.data.Storeqw', {
  *         fields: ['id','show', {
  *               name: 'airDate',
  *               type: 'date',

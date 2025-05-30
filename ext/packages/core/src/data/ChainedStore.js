@@ -20,7 +20,7 @@ Ext.define('Ext.data.ChainedStore', {
 
     config: {
         /**
-         * @cfg {Ext.data.Store/String} source
+         * @cfg {Ext.data.Storeqw/String} source
          * The backing data source for this chained store. Either a store instance
          * or the id of an existing store.
          */

@@ -9,11 +9,11 @@
  * which can be specified as a string on the column configuration. These call underlying methods
  * on the store:
  *
- *  - {@link Ext.data.Store#count count}
- *  - {@link Ext.data.Store#sum sum}
- *  - {@link Ext.data.Store#min min}
- *  - {@link Ext.data.Store#max max}
- *  - {@link Ext.data.Store#average average}
+ *  - {@link Ext.data.Storeqw#count count}
+ *  - {@link Ext.data.Storeqw#sum sum}
+ *  - {@link Ext.data.Storeqw#min min}
+ *  - {@link Ext.data.Storeqw#max max}
+ *  - {@link Ext.data.Storeqw#average average}
  *
  * Alternatively, the summaryType can be a function definition. If this is the case,
  * the function is called with an array of records to calculate the summary value.

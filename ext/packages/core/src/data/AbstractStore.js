@@ -2,7 +2,7 @@
  * AbstractStore is a superclass of {@link Ext.data.ProxyStore} and {@link Ext.data.ChainedStore}.
  * It's never used directly, but offers a set of methods used by both of those subclasses.
  *
- * Unless you need to make a whole new type of Store, see {@link Ext.data.Store} instead.
+ * Unless you need to make a whole new type of Store, see {@link Ext.data.Storeqw} instead.
  */
 Ext.define('Ext.data.AbstractStore', {
     mixins: [
@@ -232,7 +232,7 @@ Ext.define('Ext.data.AbstractStore', {
     /**
      * @property {Number} currentPage
      * The page that the Store has most recently loaded
-     * (see {@link Ext.data.Store#loadPage loadPage})
+     * (see {@link Ext.data.Storeqw#loadPage loadPage})
      */
     currentPage: 1,
 
@@ -274,7 +274,7 @@ Ext.define('Ext.data.AbstractStore', {
          * @event add
          * Fired when a Model instance has been added to this Store.
          *
-         * @param {Ext.data.Store} store The store.
+         * @param {Ext.data.Storeqw} store The store.
          * @param {Ext.data.Model[]} records The records that were added.
          * @param {Number} index The index at which the records were inserted.
          * @since 1.1.0
@@ -286,7 +286,7 @@ Ext.define('Ext.data.AbstractStore', {
          *
          * **The signature for this event has changed in 5.0:**
          *
-         * @param {Ext.data.Store} store The Store object
+         * @param {Ext.data.Storeqw} store The Store object
          * @param {Ext.data.Model[]} records The records that were removed. In previous
          * releases this was a single record, not an array.
          * @param {Number} index The index at which the records were removed.
@@ -298,7 +298,7 @@ Ext.define('Ext.data.AbstractStore', {
         /**
          * @event update
          * Fires when a Model instance has been updated.
-         * @param {Ext.data.Store} this
+         * @param {Ext.data.Storeqw} this
          * @param {Ext.data.Model} record The Model instance that was updated
          * @param {String} operation The update operation being performed. Value may be one of:
          *
@@ -314,8 +314,8 @@ Ext.define('Ext.data.AbstractStore', {
 
         /**
          * @event clear
-         * Fired after the {@link Ext.data.Store#removeAll removeAll} method is called.
-         * @param {Ext.data.Store} this
+         * Fired after the {@link Ext.data.Storeqw#removeAll removeAll} method is called.
+         * @param {Ext.data.Storeqw} this
          * @since 1.1.0
          */
 
@@ -323,7 +323,7 @@ Ext.define('Ext.data.AbstractStore', {
          * @event datachanged
          * Fires for any data change in the store. This is a catch-all event that is typically fired
          * in conjunction with other events (such as `add`, `remove`, `update`, `refresh`).
-         * @param {Ext.data.Store} this The data store
+         * @param {Ext.data.Storeqw} this The data store
          * @since 1.1.0
          */
 
@@ -332,7 +332,7 @@ Ext.define('Ext.data.AbstractStore', {
          * Fires when the data cache has changed in a bulk manner (e.g., it has been sorted,
          * filtered, etc.) and a widget that is using this Store as a Record cache should refresh
          * its view.
-         * @param {Ext.data.Store} this The data store
+         * @param {Ext.data.Storeqw} this The data store
          */
 
         /**
@@ -360,7 +360,7 @@ Ext.define('Ext.data.AbstractStore', {
          *
          * For locally sorted stores, this will be just before the data items in the store's
          * backing collection are sorted.
-         * @param {Ext.data.Store} store The store being sorted
+         * @param {Ext.data.Storeqw} store The store being sorted
          * @param {Ext.util.Sorter[]} sorters Array of sorters applied to the store
          */
 
@@ -373,7 +373,7 @@ Ext.define('Ext.data.AbstractStore', {
          *
          * For locally sorted stores, this will be just after the data items in the store's backing
          * collection are sorted.
-         * @param {Ext.data.Store} store The store being sorted
+         * @param {Ext.data.Storeqw} store The store being sorted
          */
         me.isInitializing = true;
         me.mixins.observable.constructor.call(me, config);
@@ -1400,7 +1400,7 @@ Ext.define('Ext.data.AbstractStore', {
      * See {@link #groupField}, {@link #groupDir}. Example for a store
      * containing records with a color field:
      *
-     *     var myStore = Ext.create('Ext.data.Store', {
+     *     var myStore = Ext.create('Ext.data.Storeqw', {
      *         groupField: 'color',
      *         groupDir  : 'DESC'
      *     });

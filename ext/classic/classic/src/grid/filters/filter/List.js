@@ -4,7 +4,7 @@
  * user input with a configurable {@link Ext.form.field.Checkbox check box field} in the filter
  * section  of the column header.
  * 
- * List filters are able to be preloaded/backed by an Ext.data.Store to load
+ * List filters are able to be preloaded/backed by an Ext.data.Storeqw to load
  * their options the first time they are shown.  They are also able to create their own 
  * list of values from  all unique values of the specified {@link #dataIndex} field in 
  * the store at first time of filter invocation.
@@ -12,7 +12,7 @@
  * Example List Filter Usage:
  *
  *     @example
- *     var shows = Ext.create('Ext.data.Store', {
+ *     var shows = Ext.create('Ext.data.Storeqw', {
  *         fields: ['id','show','rating'],
  *         data: [
  *             {id: 0, show: 'Battlestar Galactica', rating: 2},
@@ -193,8 +193,8 @@ Ext.define('Ext.grid.filters.filter.List', {
     plain: true,
 
     /**
-     * @cfg {Ext.data.Store} [store]
-     * The {@link Ext.data.Store} this list should use as its data source.
+     * @cfg {Ext.data.Storeqw} [store]
+     * The {@link Ext.data.Storeqw} this list should use as its data source.
      *
      * If neither store nor {@link #options} is specified, then the choices list is automatically
      * populated from all unique values of the specified {@link #dataIndex} field in the store
@@ -393,7 +393,7 @@ Ext.define('Ext.grid.filters.filter.List', {
                 store.destroy();
             }
 
-            store = me.store = new Ext.data.Store({
+            store = me.store = new Ext.data.Storeqw({
                 fields: [idField, labelField],
                 data: storeData
             });

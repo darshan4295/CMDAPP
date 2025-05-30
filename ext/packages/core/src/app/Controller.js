@@ -877,12 +877,12 @@ Ext.define('Ext.app.Controller', {
     },
 
     /**
-     * Returns instance of a {@link Ext.data.Store Store} with the given name.
+     * Returns instance of a {@link Ext.data.Storeqw Store} with the given name.
      * When store doesn't exist yet, it's created.
      *
      * @param {String} name
      *
-     * @return {Ext.data.Store} a store instance.
+     * @return {Ext.data.Storeqw} a store instance.
      */
     getStore: function(name) {
         var storeId, store;

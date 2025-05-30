@@ -1,11 +1,11 @@
 /**
  * Readers are used to interpret data to be loaded into a {@link Ext.data.Model Model} instance
- * or a {@link Ext.data.Store Store} - often in response to an AJAX request. In general there is
+ * or a {@link Ext.data.Storeqw Store} - often in response to an AJAX request. In general there is
  * usually no need to create a Reader instance directly, since a Reader is almost always used
  * together with a {@link Ext.data.proxy.Proxy Proxy}, and is configured using the Proxy's
  * {@link Ext.data.proxy.Proxy#cfg-reader reader} configuration property:
  * 
- *     Ext.create('Ext.data.Store', {
+ *     Ext.create('Ext.data.Storeqw', {
  *         model: 'User',
  *         proxy: {
  *             type: 'ajax',
@@ -125,7 +125,7 @@
  * for each Order (2 order items in this case), and finally the Product associated with each
  * OrderItem. Now we can read the data and use it as follows:
  *
- *     var store = Ext.create('Ext.data.Store', {
+ *     var store = Ext.create('Ext.data.Storeqw', {
  *         model: "User"
  *     });
  *
@@ -225,9 +225,9 @@ Ext.define('Ext.data.reader.Reader', {
         *     }
         *
         * You can retrieve this error message in a callback when loading a
-        * {@link Ext.data.Store Store} or {@link Ext.data.Model Model} like:
+        * {@link Ext.data.Storeqw Store} or {@link Ext.data.Model Model} like:
         *
-        *     var store = new Ext.data.Store({
+        *     var store = new Ext.data.Storeqw({
         *         fields : ['foo'],
         *         proxy  : {
         *             type   : 'ajax',
@@ -420,7 +420,7 @@ Ext.define('Ext.data.reader.Reader', {
          *
          * Example usage:
          *
-         *     Ext.create('Ext.data.Store', {
+         *     Ext.create('Ext.data.Storeqw', {
          *         model: 'User',
          *         proxy: {
          *             type: 'ajax',

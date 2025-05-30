@@ -190,7 +190,7 @@ Ext.define('Ext.grid.feature.AbstractSummary', {
     /**
      * Get the summary data for a field.
      * @private
-     * @param {Ext.data.Store} store The store to get the data from
+     * @param {Ext.data.Storeqw} store The store to get the data from
      * @param {String/Function} type The type of aggregation. If a function is specified it will
      * be passed to the stores aggregate function.
      * @param {String} field The field to aggregate on

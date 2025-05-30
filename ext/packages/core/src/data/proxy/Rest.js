@@ -43,7 +43,7 @@
  *     // 1. Load via Store
  *
  *     // the Store automatically picks up the Proxy from the User model
- *     var store = Ext.create('Ext.data.Store', {
+ *     var store = Ext.create('Ext.data.Storeqw', {
  *         model: 'User'
  *     });
  *

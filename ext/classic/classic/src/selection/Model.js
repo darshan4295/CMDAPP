@@ -37,7 +37,7 @@ Ext.define('Ext.selection.Model', {
     config: {
         /**
          * @private
-         * The {@link Ext.data.Store store} in which this selection model represents
+         * The {@link Ext.data.Storeqw store} in which this selection model represents
          * the selected subset.
          */
         store: null,
@@ -108,7 +108,7 @@ Ext.define('Ext.selection.Model', {
      *
      * **Important:** When using {@link Ext.toolbar.Paging paging} or a
      * {@link Ext.data.BufferedStore}, records which are cached in the Store's
-     * {@link Ext.data.Store#property-data data collection} may be removed from the Store
+     * {@link Ext.data.Storeqw#property-data data collection} may be removed from the Store
      * when pages change, or when rows are scrolled out of view. For this reason `pruneRemoved`
      * should be set to `false` when using a buffered Store.
      *

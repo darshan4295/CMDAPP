@@ -1,6 +1,6 @@
 /**
  * This feature allows to display the grid rows aggregated into groups as specified by the
- * {@link Ext.data.Store#grouper grouper} underneath. The groups can also be expanded and collapsed.
+ * {@link Ext.data.Storeqw#grouper grouper} underneath. The groups can also be expanded and collapsed.
  *
  * ## Extra Events
  *
@@ -46,7 +46,7 @@
  * ## Example Usage
  *
  *     @example
- *     var store = Ext.create('Ext.data.Store', {
+ *     var store = Ext.create('Ext.data.Storeqw', {
  *         fields: ['name', 'seniority', 'department'],
  *         groupField: 'department',
  *         data: [
@@ -87,11 +87,11 @@
  * specified as a string on the column configuration. These call underlying methods on 
  * the store:
  *
- *  - {@link Ext.data.Store#method-count count}
- *  - {@link Ext.data.Store#method-sum sum}
- *  - {@link Ext.data.Store#method-min min}
- *  - {@link Ext.data.Store#method-max max}
- *  - {@link Ext.data.Store#method-average average}
+ *  - {@link Ext.data.Storeqw#method-count count}
+ *  - {@link Ext.data.Storeqw#method-sum sum}
+ *  - {@link Ext.data.Storeqw#method-min min}
+ *  - {@link Ext.data.Storeqw#method-max max}
+ *  - {@link Ext.data.Storeqw#method-average average}
  *
  * Alternatively, the summaryType can be a function definition. If this is the case,
  * the function is called with two parameters:
@@ -259,9 +259,9 @@ Ext.define('Ext.grid.feature.Grouping', {
      * @cfg {String} groupHeaderTpl.columnName The column header associated with the field
      * being grouped by *if there is a column for the field*, falls back to the groupField name.
      * @cfg {Mixed}  groupHeaderTpl.groupValue The value of the
-     * {@link Ext.data.Store#groupField groupField} for the group header being rendered.
+     * {@link Ext.data.Storeqw#groupField groupField} for the group header being rendered.
      * @cfg {String} groupHeaderTpl.renderedGroupValue The rendered value of the
-     * {@link Ext.data.Store#groupField groupField} for the group header being rendered,
+     * {@link Ext.data.Storeqw#groupField groupField} for the group header being rendered,
      * as produced by the column renderer.
      * @cfg {String} groupHeaderTpl.name An alias for renderedGroupValue
      * @cfg {Ext.data.Model[]} groupHeaderTpl.rows Deprecated - use children instead.
@@ -327,7 +327,7 @@ Ext.define('Ext.grid.feature.Grouping', {
      * @cfg {Boolean} [collapsible=true]
      * Set to `false` to disable collapsing groups from the UI.
      *
-     * This is set to `false` when the associated {@link Ext.data.Store store} is
+     * This is set to `false` when the associated {@link Ext.data.Storeqw store} is
      * a {@link Ext.data.BufferedStore BufferedStore}.
      */
     collapsible: true,
@@ -1094,7 +1094,7 @@ Ext.define('Ext.grid.feature.Grouping', {
     /**
      * Returns `true` if the named group is expanded.
      * @param {String} groupName The group name. This is the value of
-     * the {@link Ext.data.Store#groupField groupField}.
+     * the {@link Ext.data.Storeqw#groupField groupField}.
      * @return {Boolean} `true` if the group defined by that value is expanded.
      */
     isExpanded: function(groupName) {
@@ -1667,7 +1667,7 @@ Ext.define('Ext.grid.feature.Grouping', {
      *
      * @param {Ext.data.Model} record The record for which to return group information.
      * @return {Object} A single group data block as returned from
-     * {@link Ext.data.Store#getGroups Store.getGroups}. Returns `undefined` if the Store
+     * {@link Ext.data.Storeqw#getGroups Store.getGroups}. Returns `undefined` if the Store
      * is not grouped.
      *
      */

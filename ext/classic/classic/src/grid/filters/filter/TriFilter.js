@@ -1,6 +1,6 @@
 /**
  * This abstract base class is used by grid filters that have a three
- * {@link Ext.data.Store#cfg-filters store filter}.
+ * {@link Ext.data.Storeqw#cfg-filters store filter}.
  * @protected
  */
 Ext.define('Ext.grid.filters.filter.TriFilter', {

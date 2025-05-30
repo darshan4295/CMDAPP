@@ -1,12 +1,12 @@
 /**
- * Small helper class to create an {@link Ext.data.Store} configured with an
+ * Small helper class to create an {@link Ext.data.Storeqw} configured with an
  * {@link Ext.data.proxy.Direct} and {@link Ext.data.reader.Json} to make interacting with an
  * {@link Ext.direct.Manager} server-side {@link Ext.direct.Provider Provider} easier. To create
- * a different proxy/reader combination create a basic {@link Ext.data.Store} configured as needed.
+ * a different proxy/reader combination create a basic {@link Ext.data.Storeqw} configured as needed.
  *
  * **Note:** Although they are not listed, this class inherits all of the config options of:
  *
- * - **{@link Ext.data.Store Store}**
+ * - **{@link Ext.data.Storeqw Store}**
  *
  * - **{@link Ext.data.reader.Json JsonReader}**
  *
@@ -23,7 +23,7 @@
 Ext.define('Ext.data.DirectStore', {
     /* Begin Definitions */
 
-    extend: 'Ext.data.Store',
+    // extend: 'Ext.data.Storeqw',
 
     alias: 'store.direct',
 

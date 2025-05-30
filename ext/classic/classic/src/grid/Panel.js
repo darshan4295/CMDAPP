@@ -3,13 +3,13 @@
  * Essentially a supercharged `<table>`, GridPanel makes it easy to fetch, sort and filter
  * large amounts of data.
  *
- * Grids are composed of two main pieces - a {@link Ext.data.Store Store} full of data and
+ * Grids are composed of two main pieces - a {@link Ext.data.Storeqw Store} full of data and
  * a set of columns to render.
  *
  * ## Basic GridPanel
  *
  *     @example
- *     Ext.create('Ext.data.Store', {
+ *     Ext.create('Ext.data.Storeqw', {
  *         storeId: 'simpsonsStore',
  *         fields:[ 'name', 'email', 'phone'],
  *         data: [
@@ -144,7 +144,7 @@
  *
  * ## Sorting & Filtering
  *
- * Every grid is attached to a {@link Ext.data.Store Store}, which provides multi-sort and
+ * Every grid is attached to a {@link Ext.data.Storeqw Store}, which provides multi-sort and
  * filtering capabilities. It's
  * easy to set up a grid to be sorted from the start:
  *
@@ -168,7 +168,7 @@
  *         { property: 'email', direction: 'DESC' }
  *     ]);
  *
- * See {@link Ext.data.Store} for examples of filtering.
+ * See {@link Ext.data.Storeqw} for examples of filtering.
  *
  * ## State saving
  *
@@ -248,11 +248,11 @@ Ext.define('Ext.grid.Panel', {
      * @event beforereconfigure
      * Fires before a reconfigure to enable modification of incoming Store and columns.
      * @param {Ext.grid.Panel} this
-     * @param {Ext.data.Store} store The store that was passed to the {@link #method-reconfigure}
+     * @param {Ext.data.Storeqw} store The store that was passed to the {@link #method-reconfigure}
      * method
      * @param {Object[]} columns The column configs that were passed to the
      * {@link #method-reconfigure} method
-     * @param {Ext.data.Store} oldStore The store that will be replaced
+     * @param {Ext.data.Storeqw} oldStore The store that will be replaced
      * @param {Ext.grid.column.Column[]} oldColumns The column headers that will be replaced.
      */
 
@@ -260,11 +260,11 @@ Ext.define('Ext.grid.Panel', {
      * @event reconfigure
      * Fires after a reconfigure.
      * @param {Ext.grid.Panel} this
-     * @param {Ext.data.Store} store The store that was passed to the
+     * @param {Ext.data.Storeqw} store The store that was passed to the
      * {@link #method-reconfigure} method
      * @param {Object[]} columns The column configs that were passed to the
      * {@link #method-reconfigure} method
-     * @param {Ext.data.Store} oldStore The store that was replaced
+     * @param {Ext.data.Storeqw} oldStore The store that was replaced
      * @param {Ext.grid.column.Column[]} oldColumns The column headers that were replaced.
      */
 });

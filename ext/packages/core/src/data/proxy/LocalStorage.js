@@ -25,10 +25,10 @@
  * the saved Search data.
  *
  * Saving our data into localStorage is easy and would usually be done with a
- * {@link Ext.data.Store Store}:
+ * {@link Ext.data.Storeqw Store}:
  *
  *     // our Store automatically picks up the LocalStorageProxy defined on the Search model
- *     var store = Ext.create('Ext.data.Store', {
+ *     var store = Ext.create('Ext.data.Storeqw', {
  *         model: "Search"
  *     });
  *

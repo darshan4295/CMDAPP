@@ -105,7 +105,7 @@
  * to provide a consistent and predictable naming structure.
  *
  * Using the example code above, there will be 3 generated methods:
- * + `User` will have an `orders()` function that returns a `Ext.data.Store` of`Orders`. 
+ * + `User` will have an `orders()` function that returns a `Ext.data.Storeqw` of`Orders`. 
  * + `Order` will have a `getUser` method which will return a `User` Model.
  * + `Order` will have a `setUser` method that will accept a `User` model or a key value.
  *
@@ -143,7 +143,7 @@
  *     }]
  *
  *     // Application code
- *     var users = new Ext.data.Store({
+ *     var users = new Ext.data.Storeqw({
  *         model: 'User',
  *         proxy: {
  *             type: 'ajax',
@@ -204,7 +204,7 @@
  *
  * Associations generate methods to allow reading and manipulation on associated data. 
  * 
- * On records that have a "to many" relationship, a single methods that returns a `Ext.data.Store`
+ * On records that have a "to many" relationship, a single methods that returns a `Ext.data.Storeqw`
  * is created.  See {@link #storeGetter}. On records that have a "to one" relationship, 2 methods
  * are generated, a {@link #recordGetter getter} and a {@link #recordSetter setter}.
  *
@@ -265,20 +265,20 @@ Ext.define('Ext.data.schema.Association', {
      * @param {Function} [options.success] A function to execute when the store loads successfully.
      * If the store has already loaded, this will be called immediately and the `Operation` will be
      * `null`. The success is passed the following parameters:
-     * @param {Ext.data.Store} [options.success.store] The store.
+     * @param {Ext.data.Storeqw} [options.success.store] The store.
      * @param {Ext.data.operation.Operation} [options.success.operation] The operation. `null`
      * if no load occurred.
      *
      * @param {Function} [options.failure] A function to execute when the store load fails.
      * If the store has already loaded, this will not be called.
      * The failure is passed the following parameters:
-     * @param {Ext.data.Store} [options.failure.store] The store.
+     * @param {Ext.data.Storeqw} [options.failure.store] The store.
      * @param {Ext.data.operation.Operation} [options.failure.operation] The operation
      * 
      * @param {Function} [options.callback] A function to execute when the store loads, whether
      * it is successful or failed. If the store has already loaded, this will be called immediately
      * and the `Operation` will be `null`. The callback is passed the following parameters:
-     * @param {Ext.data.Store} [options.callback.store] The store.
+     * @param {Ext.data.Storeqw} [options.callback.store] The store.
      * @param {Ext.data.operation.Operation} [options.callback.operation] The operation. `null`
      * if no load occurred.
      * @param {Boolean} [options.callback.success] `true` if the load was successful. If already
@@ -286,7 +286,7 @@ Ext.define('Ext.data.schema.Association', {
      *
      * @param {Object} [scope] The `this` reference for the callback. Defaults to the record.
      *
-     * @return {Ext.data.Store} The store.
+     * @return {Ext.data.Storeqw} The store.
      */
 
     /**

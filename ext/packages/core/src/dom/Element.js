@@ -4793,7 +4793,7 @@ Ext.define('Ext.dom.Element', function(Element) {
         /**
          * Scrolls this element into view within the passed container.
          *
-         *       Ext.create('Ext.data.Store', {
+         *       Ext.create('Ext.data.Storeqw', {
          *           storeId:'simpsonsStore',
          *           fields:['name', 'email', 'phone'],
          *           data:{'items':[
@@ -5771,7 +5771,7 @@ Ext.define('Ext.dom.Element', function(Element) {
         /**
          * Stops the specified event(s) from bubbling and optionally prevents the default action
          *
-         *     var store = Ext.create('Ext.data.Store', {
+         *     var store = Ext.create('Ext.data.Storeqw', {
          *         fields: ['name', 'email'],
          *         data: [{
          *             'name': 'Finn',

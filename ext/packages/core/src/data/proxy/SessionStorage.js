@@ -8,9 +8,9 @@
  * is provided but the attached store has a storeId, the storeId will be used. If neither option
  * is presented the proxy will throw an error.
  *
- * Proxies are almost always used with a {@link Ext.data.Store store}:
+ * Proxies are almost always used with a {@link Ext.data.Storeqw store}:
  *
- *     new Ext.data.Store({
+ *     new Ext.data.Storeqw({
  *         proxy: {
  *             type: 'sessionstorage',
  *             id: 'myProxyKey'

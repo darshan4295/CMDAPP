@@ -87,7 +87,7 @@ Ext.define('Ext.layout.container.Auto', {
      *     }
      *
      *     // create the Data Store
-     *     var store = Ext.create('Ext.data.Store', {
+     *     var store = Ext.create('Ext.data.Storeqw', {
      *         id: 'store',
      *         model: 'Employee',
      *         proxy: {

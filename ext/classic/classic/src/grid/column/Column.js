@@ -7,7 +7,7 @@
  * an array of column configurations will be passed to the grid:
  *
  *     @example
- *     Ext.create('Ext.data.Store', {
+ *     Ext.create('Ext.data.Storeqw', {
  *         storeId:'employeeStore',
  *         fields:['firstname', 'lastname', 'seniority', 'dep', 'hired'],
  *         data:[
@@ -66,7 +66,7 @@
  *
  * # Data Options
  *
- *  - {@link #dataIndex}: The dataIndex is the field in the underlying {@link Ext.data.Store} to use as the value for the column.
+ *  - {@link #dataIndex}: The dataIndex is the field in the underlying {@link Ext.data.Storeqw} to use as the value for the column.
  *  - {@link Ext.grid.column.Column#renderer}: Allows the underlying store
  *  value to be transformed before being displayed in the grid
  *
@@ -309,7 +309,7 @@ Ext.define('Ext.grid.column.Column', {
 
     /**
      * @cfg {String} dataIndex
-     * The name of the field in the grid's {@link Ext.data.Store}'s {@link Ext.data.Model}
+     * The name of the field in the grid's {@link Ext.data.Storeqw}'s {@link Ext.data.Model}
      * definition from which to draw the column's value. **Required.**
      */
     dataIndex: null,
@@ -344,7 +344,7 @@ Ext.define('Ext.grid.column.Column', {
     /**
      * @cfg {Boolean} sortable
      * False to disable sorting of this column. Whether local/remote sorting is used is specified in
-     * `{@link Ext.data.Store#remoteSort}`.
+     * `{@link Ext.data.Storeqw#remoteSort}`.
      */
     sortable: true,
 
@@ -445,7 +445,7 @@ Ext.define('Ext.grid.column.Column', {
      *
      * You can see an example of using the metaData parameter below.
      *
-     *      Ext.create('Ext.data.Store', {
+     *      Ext.create('Ext.data.Storeqw', {
      *           storeId: 'simpsonsStore',
      *           fields: ['class', 'attr', 'style'],
      *           data: {
@@ -519,7 +519,7 @@ Ext.define('Ext.grid.column.Column', {
      *
      * _See also {@link Ext.tip.QuickTipManager}_
      *
-     * @param {Ext.data.Store} store The data store
+     * @param {Ext.data.Storeqw} store The data store
      *
      *     renderer: function (value, metaData, record, rowIndex, colIndex, store) {
      *         // style the cell differently depending on how the value relates to the
@@ -639,7 +639,7 @@ Ext.define('Ext.grid.column.Column', {
      * **Note:** The editRenderer is called when the roweditor is initially shown.
      * Changes to the record during editing will not call editRenderer.
      *
-     *     var store = Ext.create('Ext.data.Store', {
+     *     var store = Ext.create('Ext.data.Storeqw', {
      *         fields: ['name', 'email'],
      *         data: [{
      *             "name": "Finn",
@@ -708,7 +708,7 @@ Ext.define('Ext.grid.column.Column', {
      *
      * @param {Number} colIndex The index of the current column
      *
-     * @param {Ext.data.Store} store The data store
+     * @param {Ext.data.Storeqw} store The data store
      *
      *     editRenderer: function (value, metaData, record, rowIndex, colIndex, store) {
      *         // style the cell differently depending on how the value relates to the

@@ -241,7 +241,7 @@ Ext.define('Ext.view.MultiSelectorSearch', {
      * "search grid". If this aspect of the view is changed sufficiently so that the
      * search grid cannot be found, this method should be overridden to return the proper
      * store.
-     * @return {Ext.data.Store}
+     * @return {Ext.data.Storeqw}
      */
     getSearchStore: function() {
         var searchGrid = this.lookupReference('searchGrid');

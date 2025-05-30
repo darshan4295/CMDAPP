@@ -95,7 +95,7 @@ Ext.define('Ext.data.schema.Role', {
      * modified records that should be in the store. Also correct any foreign keys that
      * need to be updated.
      *
-     * @param {Ext.data.Store} store The store.
+     * @param {Ext.data.Storeqw} store The store.
      * @param {Ext.data.Model} associatedEntity The entity that owns the records.
      * @param {Ext.data.Model[]} records The records to check.
      * @param {Ext.data.Session} session The session holding the records
@@ -329,7 +329,7 @@ Ext.define('Ext.data.schema.Role', {
      * 
      * @param {Ext.data.Model} rec The record
      * 
-     * @return {Ext.data.Model/Ext.data.Store} The associated item. `null` if not loaded.
+     * @return {Ext.data.Model/Ext.data.Storeqw} The associated item. `null` if not loaded.
      * @private
      */
     getAssociatedItem: function(rec) {

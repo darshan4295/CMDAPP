@@ -161,7 +161,7 @@ Ext.define('Ext.data.proxy.Server', {
          *
          * The url is built based upon the action being executed [create|read|update|destroy] using
          * the commensurate {@link #api} property, or if undefined default to the configured
-         * {@link Ext.data.Store}.{@link Ext.data.proxy.Server#url url}.
+         * {@link Ext.data.Storeqw}.{@link Ext.data.proxy.Server#url url}.
          *
          * For example:
          *

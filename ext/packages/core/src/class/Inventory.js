@@ -122,7 +122,7 @@ Ext.Inventory.prototype = {
      *     // returns ['widget.panel', 'widget.window', ...]
      *     var allWidgets = Ext.ClassManager.getNamesByExpression('widget.*');
      *
-     *     // returns ['Ext.data.Store', 'Ext.data.ArrayProxy', ...]
+     *     // returns ['Ext.data.Storeqw', 'Ext.data.ArrayProxy', ...]
      *     var allData = Ext.ClassManager.getNamesByExpression('Ext.data.*');
      *
      * @param {String/String[]} expression

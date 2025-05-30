@@ -1,5 +1,5 @@
 /**
- * Small helper class to make creating {@link Ext.data.Store}s from Array data easier. An
+ * Small helper class to make creating {@link Ext.data.Storeqw}s from Array data easier. An
  * ArrayStore will be automatically configured with a {@link Ext.data.reader.Array}.
  *
  * A store configuration would be something like:
@@ -30,7 +30,7 @@
  * An object literal of this form could also be used as the {@link #cfg-data} config option.
  */
 Ext.define('Ext.data.ArrayStore', {
-    extend: 'Ext.data.Store',
+    // extend: 'Ext.data.Storeqw',
     alias: 'store.array',
 
     alternateClassName: [

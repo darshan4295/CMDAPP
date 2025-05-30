@@ -271,7 +271,7 @@ Ext.define('Ext.ux.DataView.Animated', {
 
     /**
      * Caches the records from a store locally for comparison later
-     * @param {Ext.data.Store} store The store to cache data from
+     * @param {Ext.data.Storeqw} store The store to cache data from
      */
     cacheStoreData: function(store) {
         var cachedStoreData = this.cachedStoreData = {};
@@ -307,7 +307,7 @@ Ext.define('Ext.ux.DataView.Animated', {
 
     /**
      * Returns all records in the given store that were not already present
-     * @param {Ext.data.Store} store The updated store instance
+     * @param {Ext.data.Storeqw} store The updated store instance
      * @return {Object} Object of records not already present in the dataview in format {id: record}
      */
     getAdded: function(store) {
@@ -325,7 +325,7 @@ Ext.define('Ext.ux.DataView.Animated', {
 
     /**
      * Returns all records that are present in the DataView but not the new store
-     * @param {Ext.data.Store} store The updated store instance
+     * @param {Ext.data.Storeqw} store The updated store instance
      * @return {Array} Array of records that used to be present
      */
     getRemoved: function(store) {
@@ -345,7 +345,7 @@ Ext.define('Ext.ux.DataView.Animated', {
 
     /**
      * Returns all records that are already present and are still present in the new store
-     * @param {Ext.data.Store} store The updated store instance
+     * @param {Ext.data.Storeqw} store The updated store instance
      * @return {Object} Object of records that are still present from last time in format
      * {id: record}
      */

@@ -1,5 +1,5 @@
 /**
- * Small helper class to make creating {@link Ext.data.Store}s from different domain JSON
+ * Small helper class to make creating {@link Ext.data.Storeqw}s from different domain JSON
  * data easier.
  *
  * A JsonPStore will be automatically configured with a {@link Ext.data.reader.Json} and a
@@ -42,7 +42,7 @@
  * An object literal of this form could also be used as the {@link #cfg-data} config option.
  */
 Ext.define('Ext.data.JsonPStore', {
-    extend: 'Ext.data.Store',
+    // extend: 'Ext.data.Storeqw',
     alias: 'store.jsonp',
     requires: [
         'Ext.data.proxy.JsonP',

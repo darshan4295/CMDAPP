@@ -551,7 +551,7 @@ Ext.define('Ext.grid.AdvancedGroupStore', {
 }, function(GroupStore) {
     var target = GroupStore.prototype;
 
-    // Within reason we want to mimic the Ext.data.Store interface
+    // Within reason we want to mimic the Ext.data.Storeqw interface
     Ext.each([
         // Collection
         'add', 'addFilter', 'addSorted', 'aggregate', 'average',

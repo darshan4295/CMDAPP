@@ -37,8 +37,8 @@ Ext.define('Ext.ux.desktop.Desktop', {
     app: null,
 
     /**
-     * @cfg {Array/Ext.data.Store} shortcuts
-     * The items to add to the DataView. This can be a {@link Ext.data.Store Store} or a
+     * @cfg {Array/Ext.data.Storeqw} shortcuts
+     * The items to add to the DataView. This can be a {@link Ext.data.Storeqw Store} or a
      * simple array. Items should minimally provide the fields in the
      * {@link Ext.ux.desktop.ShortcutModel Shortcut}.
      */

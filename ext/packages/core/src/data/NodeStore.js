@@ -3,7 +3,7 @@
  * @private
  */
 Ext.define('Ext.data.NodeStore', {
-    extend: 'Ext.data.Store',
+    // extend: 'Ext.data.Storeqw',
     alias: 'store.node',
     requires: [
         'Ext.data.TreeModel',

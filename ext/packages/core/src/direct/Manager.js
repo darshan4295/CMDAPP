@@ -6,7 +6,7 @@
  *
  * The `Ext.direct` namespace includes several classes for a closer integration
  * with the server-side. The Ext.data namespace also includes classes for working
- * with Ext.data.Stores which are backed by data from an Ext Direct method.
+ * with Ext.data.Storeqws which are backed by data from an Ext Direct method.
  *
  * # Specification
  *

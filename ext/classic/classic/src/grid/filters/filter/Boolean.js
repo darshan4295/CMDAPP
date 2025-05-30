@@ -9,7 +9,7 @@
  * Example Boolean Filter Usage:
  * 
  *     @example
- *     var shows = Ext.create('Ext.data.Store', {
+ *     var shows = Ext.create('Ext.data.Storeqw', {
  *         fields: ['id','show', 'visible'],
  *         data: [
  *             {id: 0, show: 'Battlestar Galactica', visible: true},

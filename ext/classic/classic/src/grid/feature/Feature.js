@@ -7,7 +7,7 @@
  * There are several built in features that extend this class, for example:
  *
  *  - {@link Ext.grid.feature.Grouping} - Shows grid rows in groups as specified by the
- *    {@link Ext.data.Store}
+ *    {@link Ext.data.Storeqw}
  *  - {@link Ext.grid.feature.RowBody} - Adds a body section for each grid row that can contain
  *    markup.
  *  - {@link Ext.grid.feature.Summary} - Adds a summary row at the bottom of the grid

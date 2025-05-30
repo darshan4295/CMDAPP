@@ -1,7 +1,7 @@
 /**
  * A Model or Entity represents some object that your application manages. For example, one
  * might define a Model for Users, Products, Cars, or other real-world object that we want
- * to model in the system. Models are used by {@link Ext.data.Store stores}, which are in
+ * to model in the system. Models are used by {@link Ext.data.Storeqw stores}, which are in
  * turn used by many of the data-bound components in Ext.
  *
  * # Fields
@@ -187,9 +187,9 @@
  * # Usage in Stores
  *
  * It is very common to want to load a set of Model instances to be displayed and manipulated
- * in the UI. We do this by creating a {@link Ext.data.Store Store}:
+ * in the UI. We do this by creating a {@link Ext.data.Storeqw Store}:
  *
- *     var store = Ext.create('Ext.data.Store', {
+ *     var store = Ext.create('Ext.data.Storeqw', {
  *         model: 'User'
  *     });
  *
@@ -198,7 +198,7 @@
  *
  * A Store is just a collection of Model instances - usually loaded from a server somewhere. Store
  * can also maintain a set of added, updated and removed Model instances to be synchronized with
- * the server via the Proxy. See the {@link Ext.data.Store Store docs} for more information
+ * the server via the Proxy. See the {@link Ext.data.Storeqw Store docs} for more information
  * on Stores.
  */
 Ext.define('Ext.data.Model', {
@@ -529,7 +529,7 @@ Ext.define('Ext.data.Model', {
      *      console.log(fields[0].name, fields[1].name, fields.length);
      *
      * The data values for this field must be unique or there will be id value collisions
-     * in the {@link Ext.data.Store Store}.
+     * in the {@link Ext.data.Storeqw Store}.
      */
     idProperty: 'id',
 
@@ -1100,9 +1100,9 @@ Ext.define('Ext.data.Model', {
      * 
      * The following store events are fired when the modified record belongs to a store:
      *
-     *  - {@link Ext.data.Store#event-beginupdate beginupdate}
-     *  - {@link Ext.data.Store#event-update update}
-     *  - {@link Ext.data.Store#event-endupdate endupdate}
+     *  - {@link Ext.data.Storeqw#event-beginupdate beginupdate}
+     *  - {@link Ext.data.Storeqw#event-update update}
+     *  - {@link Ext.data.Storeqw#event-endupdate endupdate}
      * 
      * @param {String/Object} fieldName The field to set, or an object containing key/value 
      * pairs.
@@ -1333,11 +1333,11 @@ Ext.define('Ext.data.Model', {
     },
 
     /**
-     * Usually called by the {@link Ext.data.Store} to which this model instance has been
+     * Usually called by the {@link Ext.data.Storeqw} to which this model instance has been
      * {@link #join joined}. Rejects all changes made to the model instance since either creation,
      * or the last commit operation. Modified fields are reverted to their original values.
      *
-     * Developers should subscribe to the {@link Ext.data.Store#event-update} event to have their
+     * Developers should subscribe to the {@link Ext.data.Storeqw#event-update} event to have their
      * code notified of reject operations.
      *
      * @param {Boolean} [silent=false] `true` to skip notification of the owning store of the
@@ -1366,10 +1366,10 @@ Ext.define('Ext.data.Model', {
     },
 
     /**
-     * Usually called by the {@link Ext.data.Store} which owns the model instance. Commits all
+     * Usually called by the {@link Ext.data.Storeqw} which owns the model instance. Commits all
      * changes made to the instance since either creation or the last commit operation.
      *
-     * Developers should subscribe to the {@link Ext.data.Store#event-update} event to have their
+     * Developers should subscribe to the {@link Ext.data.Storeqw#event-update} event to have their
      * code notified of commit operations.
      *
      * @param {Boolean} [silent=false] Pass `true` to skip notification of the owning store of the
@@ -1451,7 +1451,7 @@ Ext.define('Ext.data.Model', {
 
     /**
      * Tells this model instance that an observer is looking at it.
-     * @param {Ext.data.Store} owner The store or other owner object to which this model
+     * @param {Ext.data.Storeqw} owner The store or other owner object to which this model
      * has been added.
      */
     join: function(owner) {
@@ -1472,8 +1472,8 @@ Ext.define('Ext.data.Model', {
 
         if (owner.isStore && !me.store) {
             /**
-            * @property {Ext.data.Store} store
-            * The {@link Ext.data.Store Store} to which this instance belongs.
+            * @property {Ext.data.Storeqw} store
+            * The {@link Ext.data.Storeqw Store} to which this instance belongs.
             *
             * **Note:** If this instance is bound to multiple stores, this property
             * will reference only the first.
@@ -1484,7 +1484,7 @@ Ext.define('Ext.data.Model', {
 
     /**
      * Tells this model instance that it has been removed from the store.
-     * @param {Ext.data.Store} owner The store or other owner object from which this
+     * @param {Ext.data.Storeqw} owner The store or other owner object from which this
      * model has been removed.
      */
     unjoin: function(owner) {
@@ -3096,7 +3096,7 @@ Ext.define('Ext.data.Model', {
 
         /**
          * Helper function used by afterEdit, afterReject and afterCommit. Calls the given
-         * method on the `Ext.data.Store` that this instance has {@link #join joined}, if any.
+         * method on the `Ext.data.Storeqw` that this instance has {@link #join joined}, if any.
          * The store function will always be called with the model instance as its single
          * argument. If this model is joined to a Ext.data.NodeStore, then this method calls
          * the given method on the NodeStore and the associated Ext.data.TreeStore.
@@ -3296,7 +3296,7 @@ Ext.define('Ext.data.Model', {
              * @readonly
              * @deprecated 5.0 Use the string `"edit"` directly.
              * The update operation of type 'edit'. Used by the
-             * {@link Ext.data.Store#event-update Store.update} event.
+             * {@link Ext.data.Storeqw#event-update Store.update} event.
              */
             EDIT: 'edit',
 
@@ -3307,7 +3307,7 @@ Ext.define('Ext.data.Model', {
              * @readonly
              * @deprecated 5.0 Use the string `"reject"` directly.
              * The update operation of type 'reject'. Used by the
-             * {@link Ext.data.Store#event-update Store.update} event.
+             * {@link Ext.data.Storeqw#event-update Store.update} event.
              */
             REJECT: 'reject',
 
@@ -3318,7 +3318,7 @@ Ext.define('Ext.data.Model', {
              * @readonly
              * @deprecated 5.0 Use the string `"commit"` directly.
              * The update operation of type 'commit'. Used by the
-             * {@link Ext.data.Store#event-update Store.update} event.
+             * {@link Ext.data.Storeqw#event-update Store.update} event.
              */
             COMMIT: 'commit',
 

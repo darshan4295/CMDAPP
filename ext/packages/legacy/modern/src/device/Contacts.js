@@ -1,5 +1,5 @@
 /**
- * This device API allows you to access a users contacts using a {@link Ext.data.Store}. This allows you to search, filter
+ * This device API allows you to access a users contacts using a {@link Ext.data.Storeqw}. This allows you to search, filter
  * and sort through all the contacts using its methods.
  *
  * To use this API, all you need to do is require this class (`Ext.device.Contacts`) and then use `Ext.device.Contacts.getContacts()`

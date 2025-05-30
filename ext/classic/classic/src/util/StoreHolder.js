@@ -140,7 +140,7 @@ Ext.define('Ext.util.StoreHolder', {
      * @method
      * Gets the listeners to bind to a new store.
      * @protected
-     * @param {Ext.data.Store} store The Store which is being bound to for which a listeners object
+     * @param {Ext.data.Storeqw} store The Store which is being bound to for which a listeners object
      * should be returned.
      * @return {Object} The listeners to be bound to the store in object literal form. The scope
      * may be omitted, it is assumed to be the current instance.

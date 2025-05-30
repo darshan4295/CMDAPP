@@ -1,5 +1,5 @@
 /**
- * A mixin that provides common store methods for Ext.data.Store & Ext.data.ChainedStore.
+ * A mixin that provides common store methods for Ext.data.Storeqw & Ext.data.ChainedStore.
  * @private
  */
 Ext.define('Ext.data.LocalStore', {
@@ -232,7 +232,7 @@ Ext.define('Ext.data.LocalStore', {
      * Note that the `filtered` option can also be passed as a separate parameter for
      * compatibility with previous versions.
      *
-     *     var store = Ext.create('Ext.data.Store', {
+     *     var store = Ext.create('Ext.data.Storeqw', {
      *         fields: ['name'],
      *         data: [{
      *             name: 'Larry'

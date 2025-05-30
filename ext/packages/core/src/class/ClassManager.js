@@ -1247,7 +1247,7 @@ var makeCtor = Ext.Class.makeCtor,
      *
      *  - **feature** - {@link Ext.grid.Panel Grid} features
      *  - **plugin** - Plugins
-     *  - **store** - {@link Ext.data.Store}
+     *  - **store** - {@link Ext.data.Storeqw}
      *  - **widget** - Components
      *
      * Most useful for defining xtypes for widgets:

@@ -6,7 +6,7 @@
  * to provide visual feedback to the user.
  *
  * This class does not provide ways to manipulate the underlying data of the configured
- * {@link Ext.data.Store}.
+ * {@link Ext.data.Storeqw}.
  *
  * This is the base class for both {@link Ext.grid.View} and {@link Ext.tree.View} and is not
  * to be used directly.
@@ -241,7 +241,7 @@ Ext.define('Ext.view.Table', {
      * @param {Object} rowParams **DEPRECATED.** For row body use the
      * {@link Ext.grid.feature.RowBody#getAdditionalData getAdditionalData} method of the rowbody
      * feature.
-     * @param {Ext.data.Store} store The store this grid is bound to
+     * @param {Ext.data.Storeqw} store The store this grid is bound to
      * @return {String} a CSS class name to add to the row.
      * @method
      */

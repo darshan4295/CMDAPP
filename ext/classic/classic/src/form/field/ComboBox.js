@@ -7,7 +7,7 @@
  * in the selection list; to prevent free-form values and restrict them to items in the list,
  * set {@link #forceSelection} to `true`.
  *
- * The selection list's options are populated from any {@link Ext.data.Store}, including remote
+ * The selection list's options are populated from any {@link Ext.data.Storeqw}, including remote
  * stores. The data items in the store are mapped to each option's displayed text and backing value
  * via the {@link #valueField} and {@link #displayField} configurations, respectively.
  *
@@ -19,7 +19,7 @@
  *
  *     @example
  *     // The data store containing the list of states
- *     var states = Ext.create('Ext.data.Store', {
+ *     var states = Ext.create('Ext.data.Storeqw', {
  *         fields: ['abbr', 'name'],
  *         data : [
  *             {"abbr":"AL", "name":"Alabama"},
@@ -68,7 +68,7 @@
  * Both the text shown in dropdown menu and text field can be easily customized:
  *
  *     @example
- *     var states = Ext.create('Ext.data.Store', {
+ *     var states = Ext.create('Ext.data.Storeqw', {
  *         fields: ['abbr', 'name'],
  *         data : [
  *             {"abbr":"AL", "name":"Alabama"},
@@ -265,13 +265,13 @@ Ext.define('Ext.form.field.ComboBox', {
     },
 
     /**
-     * @cfg {Ext.data.Store/String/Array/Object} store (required)
+     * @cfg {Ext.data.Storeqw/String/Array/Object} store (required)
      * The data source to which the combo / tagfield is bound. Acceptable values for this
      * property are:
      *
-     *   - **any {@link Ext.data.Store Store} class / subclass**
-     *   - **an {@link Ext.data.Store#storeId ID of a store}**
-     *   - **an Array** : Arrays will be converted to a {@link Ext.data.Store} internally,
+     *   - **any {@link Ext.data.Storeqw Store} class / subclass**
+     *   - **an {@link Ext.data.Storeqw#storeId ID of a store}**
+     *   - **an Array** : Arrays will be converted to a {@link Ext.data.Storeqw} internally,
      *     automatically generating {@link Ext.data.Field#name field names} to work with all
      *     data components.
      *
@@ -285,13 +285,13 @@ Ext.define('Ext.form.field.ComboBox', {
      *       For a multi-dimensional array, the value in index 0 of each item will be assumed
      *       to be the combo {@link #valueField}, while the value at index 1 is assumed to be
      *       the combo {@link #displayField}.
-     *   - **a {@link Ext.data.Store Store} config object**.  When passing a config you can
+     *   - **a {@link Ext.data.Storeqw Store} config object**.  When passing a config you can
      *     specify the store type by alias.  Passing a config object with a store type will
      *     dynamically create a new store of that type when the combo / tagfield is
      *     instantiated.
      *
      *     Ext.define('MyApp.store.States', {
-     *         extend: 'Ext.data.Store',
+     *         extend: 'Ext.data.Storeqw',
      *         alias: 'store.states',
      *         fields: ['name']
      *     });
@@ -373,14 +373,14 @@ Ext.define('Ext.form.field.ComboBox', {
      *     interaction.
      *
      *     This is typically used for "autocomplete" type inputs, and after the user finishes
-     *     typing, the Store is {@link Ext.data.Store#method-load load}ed.
+     *     typing, the Store is {@link Ext.data.Storeqw#method-load load}ed.
      *
      *     A parameter containing the typed string is sent in the load request. The default
      *     parameter name for the input string is `query`, but this can be configured using
      *     the {@link #queryParam} config.
      *
      *     In `queryMode: 'remote'`, the Store may be configured with
-     *     `{@link Ext.data.Store#remoteFilter remoteFilter}: true`, and further filters may be
+     *     `{@link Ext.data.Storeqw#remoteFilter remoteFilter}: true`, and further filters may be
      *     _programatically_ added to the Store which are then passed with every load
      *     request which allows the server to further refine the returned dataset.
      *
@@ -422,7 +422,7 @@ Ext.define('Ext.form.field.ComboBox', {
      * the display value can be determined from the appropriate record.
      * The store will only be loaded in a limited set of circumstances:
      * - The store is not currently loading.
-     * - The store does not have a pending {@link Ext.data.Store#autoLoad}.
+     * - The store does not have a pending {@link Ext.data.Storeqw#autoLoad}.
      * - The store has not been loaded before.
      */
     autoLoadOnValue: false,
@@ -642,7 +642,7 @@ Ext.define('Ext.form.field.ComboBox', {
      *
      *     The running template is configured with some extra properties that provide some context:
      *         - field {@link Ext.form.field.ComboBox ComboBox} This combobox
-     *         - store {@link Ext.data.Store Store} This combobox's data store
+     *         - store {@link Ext.data.Storeqw Store} This combobox's data store
      */
 
     /**

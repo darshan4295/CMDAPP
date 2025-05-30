@@ -212,7 +212,7 @@ Ext.define('Ext.grid.feature.AdvancedGrouping', {
      *
      *       groupSummaryTpl: 'Summary: {store.data.length}'
      *
-     * @cfg {Ext.data.Store} summaryTpl.store The store object.
+     * @cfg {Ext.data.Storeqw} summaryTpl.store The store object.
      */
     summaryTpl: 'Summary ({store.data.length})',
 

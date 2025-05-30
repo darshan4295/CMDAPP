@@ -95,7 +95,7 @@ Ext.define('Ext.tree.Column', {
      * 
      * _See also {@link Ext.tip.QuickTipManager}_
      * 
-     * @param {Ext.data.Store} store The data store
+     * @param {Ext.data.Storeqw} store The data store
      * 
      *     renderer: function (value, metaData, record, rowIndex, colIndex, store) {
      *         // style the cell differently depending on how the value relates to the 

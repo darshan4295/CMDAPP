@@ -1,9 +1,9 @@
 /**
- * ProxyStore is a superclass of {@link Ext.data.Store} and {@link Ext.data.BufferedStore}.
+ * ProxyStore is a superclass of {@link Ext.data.Storeqw} and {@link Ext.data.BufferedStore}.
  * It's never used directly, but offers a set of methods used by both of those subclasses.
  *
  * We've left it here in the docs for reference purposes, but unless you need to make a whole new
- * type of Store, what you're probably looking for is {@link Ext.data.Store}. If you're still
+ * type of Store, what you're probably looking for is {@link Ext.data.Storeqw}. If you're still
  * interested, here's a brief description of what ProxyStore is and is not.
  *
  * ProxyStore provides the basic configuration for anything that can be considered a Store.
@@ -16,16 +16,16 @@
  * {@link #proxy}.
  *
  * Built-in Store subclasses add extra behavior to each of these functions. Note also that each
- * ProxyStore subclass has its own way of storing data - in {@link Ext.data.Store} the data
+ * ProxyStore subclass has its own way of storing data - in {@link Ext.data.Storeqw} the data
  * is saved as a flat {@link Ext.util.Collection Collection}, whereas in
  * {@link Ext.data.BufferedStore BufferedStore} we use a {@link Ext.data.PageMap} to maintain
  * a client side cache of pages of records.
  *
  * The store provides filtering and sorting support. This sorting/filtering can happen on the
  * client side or can be completed on the server. This is controlled by the
- * {@link Ext.data.Store#remoteSort remoteSort} and {@link Ext.data.Store#remoteFilter remoteFilter}
+ * {@link Ext.data.Storeqw#remoteSort remoteSort} and {@link Ext.data.Storeqw#remoteFilter remoteFilter}
  * config options. For more information see the {@link #method-sort} and
- * {@link Ext.data.Store#filter filter} methods.
+ * {@link Ext.data.Storeqw#filter filter} methods.
  */
 Ext.define('Ext.data.ProxyStore', {
     extend: 'Ext.data.AbstractStore',
@@ -113,7 +113,7 @@ Ext.define('Ext.data.ProxyStore', {
          * @cfg {Boolean} sortOnLoad
          * If true, any sorters attached to this Store will be run after loading data,
          * before the datachanged event is fired. Defaults to true, ignored if
-         * {@link Ext.data.Store#remoteSort remoteSort} is true
+         * {@link Ext.data.Storeqw#remoteSort remoteSort} is true
          */
         sortOnLoad: true,
 
@@ -208,8 +208,8 @@ Ext.define('Ext.data.ProxyStore', {
      * `false` the load action will be canceled.
      *
      * **Note:** If you are using a buffered store, you should use
-     * {@link Ext.data.Store#beforeprefetch beforeprefetch}.
-     * @param {Ext.data.Store} store This Store
+     * {@link Ext.data.Storeqw#beforeprefetch beforeprefetch}.
+     * @param {Ext.data.Storeqw} store This Store
      * @param {Ext.data.operation.Operation} operation The Ext.data.operation.Operation object
      * that will be passed to the Proxy to load the Store
      * @since 1.1.0
@@ -220,8 +220,8 @@ Ext.define('Ext.data.ProxyStore', {
      * Fires whenever the store reads data from a remote data source.
      *
      * **Note:** If you are using a buffered store, you should use
-     * {@link Ext.data.Store#prefetch prefetch}.
-     * @param {Ext.data.Store} this
+     * {@link Ext.data.Storeqw#prefetch prefetch}.
+     * @param {Ext.data.Storeqw} this
      * @param {Ext.data.Model[]} records An array of records
      * @param {Boolean} successful True if the operation was successful.
      * @param {Ext.data.operation.Read} operation The
@@ -233,7 +233,7 @@ Ext.define('Ext.data.ProxyStore', {
     /**
      * @event write
      * Fires whenever a successful write has been made via the configured {@link #proxy Proxy}
-     * @param {Ext.data.Store} store This Store
+     * @param {Ext.data.Storeqw} store This Store
      * @param {Ext.data.operation.Operation} operation The
      * {@link Ext.data.operation.Operation Operation} object that was used in the write
      * @since 3.4.0
@@ -253,7 +253,7 @@ Ext.define('Ext.data.ProxyStore', {
      * Metadata usually consists of new field definitions, but can include any configuration data
      * required by an application, and can be processed as needed in the event handler.
      * This event is currently only fired for JsonReaders.
-     * @param {Ext.data.Store} this
+     * @param {Ext.data.Storeqw} this
      * @param {Object} meta The JSON metadata
      * @since 1.1.0
      */
@@ -703,7 +703,7 @@ Ext.define('Ext.data.ProxyStore', {
      * @param {Object} [options.scope] The scope in which to execute any callbacks (i.e. the `this`
      * object inside the callback, success and/or failure functions). Defaults to the store's proxy.
      * 
-     * @return {Ext.data.Store} this
+     * @return {Ext.data.Storeqw} this
      */
     sync: function(options) {
         var me = this,
@@ -818,7 +818,7 @@ Ext.define('Ext.data.ProxyStore', {
      * rather than the default which is to have the incoming records *replace* the existing store
      * contents.
      * 
-     * @return {Ext.data.Store} this
+     * @return {Ext.data.Storeqw} this
      * @since 1.1.0
      */
     load: function(options) {

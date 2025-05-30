@@ -6,7 +6,7 @@
  *     // Init the singleton.  Any tag-based quick tips will start working.
  *     Ext.tip.QuickTipManager.init();
  *
- *     Ext.create('Ext.data.Store', {
+ *     Ext.create('Ext.data.Storeqw', {
  *         storeId:'employeeStore',
  *         fields:['firstname', 'lastname', 'seniority', 'dep', 'hired'],
  *         data:[
@@ -144,7 +144,7 @@ Ext.define('Ext.grid.column.Action', {
      * @param {Ext.data.Model} record The Record providing the data
      * @param {Number} rowIndex The row index
      * @param {Number} colIndex The column index
-     * @param {Ext.data.Store} store The Store which is providing the data Model
+     * @param {Ext.data.Storeqw} store The Store which is providing the data Model
      * @return {String} The CSS class
      *
      * @controllable
@@ -183,7 +183,7 @@ Ext.define('Ext.grid.column.Action', {
      * 
      *     Ext.tip.QuickTipManager.init();
      *     
-     *     Ext.create('Ext.data.Store', {
+     *     Ext.create('Ext.data.Storeqw', {
      *         storeId: 'employeeStore',
      *         fields: ['firstname', 'grade'],
      *         data: [{
@@ -248,7 +248,7 @@ Ext.define('Ext.grid.column.Action', {
      * @param {Ext.data.Model} record The Record providing the data.
      * @param {Number} rowIndex The row index.
      * @param {Number} colIndex The column index.
-     * @param {Ext.data.Store} store The Store which is providing the data Model.
+     * @param {Ext.data.Storeqw} store The Store which is providing the data Model.
      * @return {String} tip The tip text
      *
      * @controllable
@@ -283,7 +283,7 @@ Ext.define('Ext.grid.column.Action', {
      * @cfg {Ext.data.Model} items.getClass.r The Record providing the data.
      * @cfg {Number} items.getClass.rowIndex The row index.
      * @cfg {Number} items.getClass.colIndex The column index.
-     * @cfg {Ext.data.Store} items.getClass.store The Store which is providing the data Model.
+     * @cfg {Ext.data.Storeqw} items.getClass.store The Store which is providing the data Model.
      *
      * @cfg {Function} items.handler A function called when the icon is clicked.
      * @cfg {Ext.view.Table} items.handler.view The owning TableView.
@@ -317,7 +317,7 @@ Ext.define('Ext.grid.column.Action', {
      * @cfg {Ext.data.Model} items.getTip.r The Record providing the data.
      * @cfg {Number} items.getTip.rowIndex The row index.
      * @cfg {Number} items.getTip.colIndex The column index.
-     * @cfg {Ext.data.Store} items.getTip.store The Store which is providing the data Model.
+     * @cfg {Ext.data.Storeqw} items.getTip.store The Store which is providing the data Model.
      *
      * @cfg {Object} items.scope The scope (`this` reference) in which the `handler`, `getClass`,
      * `isActionDisabled` and `getTip` functions are executed. Fallback defaults are this Column's

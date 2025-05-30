@@ -7,7 +7,7 @@
  *
  * Use a BufferedStore when the dataset size is so large that the database and network latency,
  * and client memory requirements preclude caching the entire dataset in a regular
- * {@link Ext.data.Store Store}.
+ * {@link Ext.data.Storeqw Store}.
  *
  * When using a BufferedStore *not all of the dataset is present in the client*. Only pages which
  * have been requested by the UI (usually a {@link Ext.grid.Panel GridPanel}) and surrounding pages

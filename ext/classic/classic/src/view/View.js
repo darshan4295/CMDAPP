@@ -2,13 +2,13 @@
  * A mechanism for displaying data using custom layout templates and formatting.
  *
  * The View uses an {@link Ext.XTemplate} as its internal templating mechanism, and is bound to an
- * {@link Ext.data.Store} so that as the data in the store changes the view is automatically updated
+ * {@link Ext.data.Storeqw} so that as the data in the store changes the view is automatically updated
  * to reflect the changes. The view also provides built-in behavior for many common events that can
  * occur for its contained items including click, doubleclick, mouseover, mouseout, etc. as well as
  * a built-in selection model. **In order to use these features, an {@link #itemSelector} config
  * must be provided for the View to determine what nodes it will be working with.**
  *
- * The example below binds a View to a {@link Ext.data.Store} and renders it into an
+ * The example below binds a View to a {@link Ext.data.Storeqw} and renders it into an
  * {@link Ext.panel.Panel}.
  *
  *     @example
@@ -20,7 +20,7 @@
  *         ]
  *     });
  *
- *     Ext.create('Ext.data.Store', {
+ *     Ext.create('Ext.data.Storeqw', {
  *         id:'imagesStore',
  *         model: 'Image',
  *         data: [

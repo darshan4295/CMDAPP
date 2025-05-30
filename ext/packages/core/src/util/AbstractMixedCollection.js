@@ -1220,7 +1220,7 @@ Ext.define('Ext.util.AbstractMixedCollection', {
 
     /**
      * Returns a regular expression based on the given value and matching options. This is used
-     * internally for finding and filtering, and by Ext.data.Store#filter
+     * internally for finding and filtering, and by Ext.data.Storeqw#filter
      * @private
      * @param {String} value The value to create the regex for. This is escaped using Ext.escapeRe
      * @param {Boolean} anyMatch True to allow any match - no regex start/end line anchors

@@ -220,7 +220,7 @@ Ext.define('Ext.data.writer.Writer', {
          * object. The transform can be a function, or an object  with a 'fn' key and an optional
          * 'scope' key. Example usage:
          *
-         *     Ext.create('Ext.data.Store', {
+         *     Ext.create('Ext.data.Storeqw', {
          *         model: 'User',
          *         proxy: {
          *             type: 'ajax',

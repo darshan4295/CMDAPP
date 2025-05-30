@@ -24,7 +24,7 @@ Ext.define('Ext.picker.Time', {
     alias: 'widget.timepicker',
 
     requires: [
-        'Ext.data.Store',
+        // 'Ext.data.Storeqw',
         'Ext.Date'
     ],
 
@@ -39,7 +39,7 @@ Ext.define('Ext.picker.Time', {
     statics: {
         /**
          * @private
-         * Creates the internal {@link Ext.data.Store} that contains the available times. The store
+         * Creates the internal {@link Ext.data.Storeqw} that contains the available times. The store
          * is loaded with all possible times, and it is later filtered to hide those times outside
          * the minValue/maxValue.
          */
@@ -64,7 +64,7 @@ Ext.define('Ext.picker.Time', {
                 min = dateUtil.add(min, 'mi', increment);
             }
 
-            return new Ext.data.Store({
+            return new Ext.data.Storeqw({
                 model: Ext.picker.Time.prototype.modelType,
                 data: times
             });

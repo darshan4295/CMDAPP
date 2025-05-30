@@ -5,7 +5,7 @@
  * {@link Ext.XTemplate XTemplate}.
  *
  *     @example
- *     Ext.create('Ext.data.Store', {
+ *     Ext.create('Ext.data.Storeqw', {
  *         storeId:'employeeStore',
  *         fields:['firstname', 'lastname', 'seniority', 'department'],
  *         groupField: 'department',

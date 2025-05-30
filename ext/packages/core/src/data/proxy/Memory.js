@@ -3,7 +3,7 @@
  * contents are lost on every page refresh.
  *
  * Usually this Proxy isn't used directly, serving instead as a helper to a
- * {@link Ext.data.Store Store} where a reader is required to load data. For example, say we have
+ * {@link Ext.data.Storeqw Store} where a reader is required to load data. For example, say we have
  * a Store for a User model and have some inline data we want to load, but this data isn't in quite
  * the right format: we can use a MemoryProxy with a JsonReader to read it into our Store:
  *
@@ -34,7 +34,7 @@
  *     };
  *
  *     // note how we set the 'root' in the reader to match the data structure above
- *     var store = Ext.create('Ext.data.Store', {
+ *     var store = Ext.create('Ext.data.Storeqw', {
  *         autoLoad: true,
  *         model: 'User',
  *         data: data,

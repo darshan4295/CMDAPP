@@ -970,7 +970,7 @@ Ext.define('Ext.data.field.Field', {
      *     });
      *
      *     // create the data store
-     *     var store = Ext.create('Ext.data.Store', {
+     *     var store = Ext.create('Ext.data.Storeqw', {
      *         model: 'Dude',
      *         proxy: {
      *             type: 'memory',

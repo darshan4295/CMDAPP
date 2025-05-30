@@ -1,6 +1,6 @@
 /**
  * The Ext.chart package provides the capability to visualize data.
- * Each chart binds directly to a {@link Ext.data.Store store} enabling automatic
+ * Each chart binds directly to a {@link Ext.data.Storeqw store} enabling automatic
  * updates of the chart. A chart configuration object has some overall styling
  * options as well as an array of axes and series. A chart instance example could
  * look like this:
@@ -114,7 +114,7 @@ Ext.define('Ext.chart.AbstractChart', {
         'Ext.chart.legend.SpriteLegend',
         'Ext.chart.Caption',
         'Ext.chart.legend.store.Store',
-        'Ext.data.Store'
+        'Ext.data.Storeqw'
     ],
 
     isChart: true,
@@ -250,27 +250,27 @@ Ext.define('Ext.chart.AbstractChart', {
      * @event storechange
      * Fires when the store of the chart changes.
      * @param {Ext.chart.AbstractChart} chart
-     * @param {Ext.data.Store} newStore
-     * @param {Ext.data.Store} oldStore
+     * @param {Ext.data.Storeqw} newStore
+     * @param {Ext.data.Storeqw} oldStore
      */
 
     config: {
 
         /**
-         * @cfg {Ext.data.Store/String/Object} store
+         * @cfg {Ext.data.Storeqw/String/Object} store
          * The data source to which the chart is bound.
          * Acceptable values for this property are:
          *
-         *   - **any {@link Ext.data.Store Store} class / subclass**
-         *   - **an {@link Ext.data.Store#storeId ID of a store}**
-         *   - **a {@link Ext.data.Store Store} config object**.  When passing a config you can
+         *   - **any {@link Ext.data.Storeqw Store} class / subclass**
+         *   - **an {@link Ext.data.Storeqw#storeId ID of a store}**
+         *   - **a {@link Ext.data.Storeqw Store} config object**.  When passing a config you can
          *     specify the store type by alias.  Passing a config object with a store type will
          *     dynamically create a new store of that type when the chart is instantiated.
          *
          * For example:
          *
          *     Ext.define('MyApp.store.Customer', {
-         *         extend: 'Ext.data.Store',
+         *         extend: 'Ext.data.Storeqw',
          *         alias: 'store.customerstore',
          *
          *         fields: ['name', 'value']
@@ -2170,7 +2170,7 @@ Ext.define('Ext.chart.AbstractChart', {
 
     /**
      * Changes the data store bound to this chart and refreshes it.
-     * @param {Ext.data.Store} store The store to bind to this chart.
+     * @param {Ext.data.Storeqw} store The store to bind to this chart.
      */
     bindStore: function(store) {
         this.setStore(store);

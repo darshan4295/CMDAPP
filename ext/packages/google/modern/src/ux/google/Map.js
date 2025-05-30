@@ -210,7 +210,7 @@ Ext.define('Ext.ux.google.Map', {
         mapListeners: null,
 
         /**
-         * @cfg {Ext.data.Store/Object/Ext.data.Model[]/Ext.ux.google.map.Marker} markers
+         * @cfg {Ext.data.Storeqw/Object/Ext.data.Model[]/Ext.ux.google.map.Marker} markers
          * Can be either a Store instance, a configuration object that will be turned into a
          * store, an array of model or a single model (in which case a store will be created).
          * The Store is used to populate the set of markers that will be rendered in the map.

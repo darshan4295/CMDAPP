@@ -1,5 +1,5 @@
 /**
- * This class provides access to a range of records in a {@link Ext.data.Store store}.
+ * This class provides access to a range of records in a {@link Ext.data.Storeqw store}.
  * Instances of this class are not created directly but are rather returned by a store's
  * {@link Ext.data.AbstractStore#createActiveRange createActiveRange} method.
  *

@@ -1,5 +1,5 @@
 /**
- * Proxies are used by {@link Ext.data.Store Stores} to handle the loading and saving of
+ * Proxies are used by {@link Ext.data.Storeqw Stores} to handle the loading and saving of
  * {@link Ext.data.Model Model} data. Usually developers will not need to create or interact
  * with proxies directly.
  *
@@ -132,7 +132,7 @@ Ext.define('Ext.data.proxy.Proxy', {
      * of new field definitions, but can include any configuration data required by an
      * application, and can be processed as needed in the event handler.
      * This event is currently only fired for JsonReaders. Note that this event is also
-     * propagated by {@link Ext.data.Store}, which is typically where it would be handled.
+     * propagated by {@link Ext.data.Storeqw}, which is typically where it would be handled.
      * @param {Ext.data.proxy.Proxy} this
      * @param {Object} meta The JSON metadata
      */
@@ -261,8 +261,8 @@ Ext.define('Ext.data.proxy.Proxy', {
 
     /**
      * Performs a batch of {@link Ext.data.operation.Operation Operations}, in the order specified
-     * by {@link #batchOrder}. Used internally by {@link Ext.data.Store}'s
-     * {@link Ext.data.Store#sync sync} method. Example usage:
+     * by {@link #batchOrder}. Used internally by {@link Ext.data.Storeqw}'s
+     * {@link Ext.data.Storeqw#sync sync} method. Example usage:
      *
      *     myProxy.batch({
      *         create : [myModel1, myModel2],

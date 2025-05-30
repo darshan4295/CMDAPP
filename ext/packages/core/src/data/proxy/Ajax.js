@@ -1,6 +1,6 @@
 /**
  * AjaxProxy is one of the most widely-used ways of getting data into your application. It uses AJAX
- * requests to load data from the server, usually to be placed into a {@link Ext.data.Store Store}.
+ * requests to load data from the server, usually to be placed into a {@link Ext.data.Storeqw Store}.
  * Let's take a look at a typical setup. Here we're going to set up a Store that has an Ajax Proxy.
  * To prepare, we'll also set up a {@link Ext.data.Model Model}:
  *
@@ -10,7 +10,7 @@
  *     });
  *
  *     // The Store contains the AjaxProxy as an inline configuration
- *     var store = Ext.create('Ext.data.Store', {
+ *     var store = Ext.create('Ext.data.Storeqw', {
  *         model: 'User',
  *         proxy: {
  *             type: 'ajax',
@@ -22,7 +22,7 @@
  *
  * Our example is going to load user data into a Store, so we start off by defining a
  * {@link Ext.data.Model Model} with the fields that we expect the server to return. Next we set up
- * the Store itself, along with a {@link Ext.data.Store#proxy proxy} configuration.
+ * the Store itself, along with a {@link Ext.data.Storeqw#proxy proxy} configuration.
  * This configuration was automatically turned into an Ext.data.proxy.Ajax instance, with the url
  * we specified being passed into AjaxProxy's constructor. It's as if we'd done this:
  *
@@ -158,7 +158,7 @@
  *     });
  *
  * This is the type of object that is generated internally when loading a
- * {@link Ext.data.Store Store} with sorters and filters defined. By default the AjaxProxy will
+ * {@link Ext.data.Storeqw Store} with sorters and filters defined. By default the AjaxProxy will
  * JSON encode the sorters and filters, resulting in something like this (note that the url
  * is escaped before sending the request, but is left unescaped here for clarity):
  *
@@ -212,9 +212,9 @@
  * and follow the data to where the {@link #reader} attempts to consume it.
  *
  * @constructor
- * Note that if this HttpProxy is being used by a {@link Ext.data.Store Store}, then the Store's
- * call to {@link Ext.data.Store#method-load load} will override any specified callback and params
- * options. In this case, use the {@link Ext.data.Store Store}'s events to modify parameters,
+ * Note that if this HttpProxy is being used by a {@link Ext.data.Storeqw Store}, then the Store's
+ * call to {@link Ext.data.Storeqw#method-load load} will override any specified callback and params
+ * options. In this case, use the {@link Ext.data.Storeqw Store}'s events to modify parameters,
  * or react to loading events.
  *
  * @param {Object} config (optional) Config object.

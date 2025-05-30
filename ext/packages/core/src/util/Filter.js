@@ -1,6 +1,6 @@
 /**
  * A filter that can be applied to an `Ext.util.Collection` or other data container such
- * an `Ext.data.Store`. A `Filter` can be simply a filter on a `property` and `value` pair
+ * an `Ext.data.Storeqw`. A `Filter` can be simply a filter on a `property` and `value` pair
  * or a filter function with custom logic.
  *
  * Normally filters are added to stores or collections but they can be created directly:

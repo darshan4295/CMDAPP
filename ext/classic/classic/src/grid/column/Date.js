@@ -4,7 +4,7 @@
  * {@link #format}.
  *
  *     @example
- *     Ext.create('Ext.data.Store', {
+ *     Ext.create('Ext.data.Storeqw', {
  *         storeId:'sampleStore',
  *         fields:[
  *             { name: 'symbol', type: 'string' },

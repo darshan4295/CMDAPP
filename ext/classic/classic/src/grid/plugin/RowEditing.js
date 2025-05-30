@@ -16,7 +16,7 @@
  * {@link Ext.form.field.Date} as the editor.
  *
  *     @example
- *     Ext.create('Ext.data.Store', {
+ *     Ext.create('Ext.data.Storeqw', {
  *         storeId: 'simpsonsStore',
  *         fields:[ 'name', 'email', 'phone'],
  *         data: [

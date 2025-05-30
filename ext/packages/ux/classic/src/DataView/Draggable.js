@@ -22,7 +22,7 @@
  *     });
  *
  *     Ext.onReady(function () {
- *         Ext.create('Ext.data.Store', {
+ *         Ext.create('Ext.data.Storeqw', {
  *             storeId: 'baseball',
  *             fields: ['team', 'established'],
  *             data: [
@@ -233,7 +233,7 @@ Ext.define('Ext.ux.DataView.Draggable', {
             (store = me.ghost.store).loadRecords(records);
         }
         else {
-            store = Ext.create('Ext.data.Store', {
+            store = Ext.create('Ext.data.Storeqw', {
                 model: records[0].self
             });
 

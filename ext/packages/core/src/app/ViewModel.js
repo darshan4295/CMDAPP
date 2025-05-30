@@ -185,7 +185,7 @@
  * important when tracking changes in models so that we always have the same reference.
  *
  * A `ViewModel` provides functionality to easily consume the built in data package types
- * {@link Ext.data.Model} and {@link Ext.data.Store}, as well as their associations.
+ * {@link Ext.data.Model} and {@link Ext.data.Storeqw}, as well as their associations.
  *
  * ### Model Links
  *
@@ -408,11 +408,11 @@
  * ### Store Properties
  *
  * It is possible to bind to the certain state properties of the store. The available options are:
- * - `{@link Ext.data.Store#method-getCount count}`
- * - `{@link Ext.data.Store#method-first}`
- * - `{@link Ext.data.Store#method-last}`
- * - `{@link Ext.data.Store#method-hasPendingLoad loading}`
- * - `{@link Ext.data.Store#method-getTotalCount totalCount}`
+ * - `{@link Ext.data.Storeqw#method-getCount count}`
+ * - `{@link Ext.data.Storeqw#method-first}`
+ * - `{@link Ext.data.Storeqw#method-last}`
+ * - `{@link Ext.data.Storeqw#method-hasPendingLoad loading}`
+ * - `{@link Ext.data.Storeqw#method-getTotalCount totalCount}`
  *
  * Example:
  *
@@ -903,7 +903,7 @@ Ext.define('Ext.app.ViewModel', {
         // @cmd-auto-dependency {isKeyedObject: true, aliasPrefix: "store.", defaultType: "store"}
         /**
          * @cfg {Object} stores
-         * A declaration of `Ext.data.Store` configurations that are first processed as
+         * A declaration of `Ext.data.Storeqw` configurations that are first processed as
          * binds to produce an effective store configuration.
          *
          * A simple store definition. We can reference this in our bind statements using the
@@ -1157,7 +1157,7 @@ Ext.define('Ext.app.ViewModel', {
     /**
      * Gets a store configured via the {@link #stores} configuration.
      * @param {String} key The name of the store.
-     * @return {Ext.data.Store} The store. `null` if no store exists.
+     * @return {Ext.data.Storeqw} The store. `null` if no store exists.
      */
     getStore: function(key) {
         var storeInfo = this.storeInfo,

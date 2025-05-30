@@ -66,7 +66,7 @@ Ext.define('Ext.grid.filters.filter.Base', {
 
     /**
      * @cfg {String} dataIndex
-     * The {@link Ext.data.Store} dataIndex of the field this filter represents.
+     * The {@link Ext.data.Storeqw} dataIndex of the field this filter represents.
      * The dataIndex does not actually have to exist in the store.
      */
     dataIndex: null,

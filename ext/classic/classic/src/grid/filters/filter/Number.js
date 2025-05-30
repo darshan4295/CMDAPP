@@ -2,7 +2,7 @@
  * Filter type for {@link Ext.grid.column.Number number columns}.
  *
  *     @example
- *     var shows = Ext.create('Ext.data.Store', {
+ *     var shows = Ext.create('Ext.data.Storeqw', {
  *           fields: ['id','show'],
  *           data: [
  *               {id: 0, show: 'Battlestar Galactica'},

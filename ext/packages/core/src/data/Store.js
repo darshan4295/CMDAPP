@@ -18,7 +18,7 @@
  *          ]
  *      });
  *
- *      var myStore = Ext.create('Ext.data.Store', {
+ *      var myStore = Ext.create('Ext.data.Storeqw', {
  *          model: 'User',
  *          proxy: {
  *              type: 'ajax',
@@ -41,7 +41,7 @@
  * Stores can also load data inline. Internally, Store converts each of the objects we pass in
  * as {@link #cfg-data} into Model instances:
  *
- *      Ext.create('Ext.data.Store', {
+ *      Ext.create('Ext.data.Storeqw', {
  *          model: 'User',
  *          data : [
  *              {firstName: 'Peter',   lastName: 'Venkman'},
@@ -85,7 +85,7 @@
  * populate the associated models. Below is a brief example, see the {@link Ext.data.reader.Reader}
  * intro docs for a full explanation:
  *
- *      var store = Ext.create('Ext.data.Store', {
+ *      var store = Ext.create('Ext.data.Storeqw', {
  *          autoLoad: true,
  *          model: "User",
  *          proxy: {
@@ -126,7 +126,7 @@
  * sufficient to either just specify sorters and filters in the Store configuration or call
  * {@link #method-sort} or {@link #filter}:
  *
- *      var store = Ext.create('Ext.data.Store', {
+ *      var store = Ext.create('Ext.data.Storeqw', {
  *          model: 'User',
  *          sorters: [{
  *              property: 'age',
@@ -176,7 +176,7 @@
  * in multiple views:
  *
  *     //this store can be used several times
- *     Ext.create('Ext.data.Store', {
+ *     Ext.create('Ext.data.Storeqw', {
  *         model: 'User',
  *         storeId: 'usersStore'
  *     });
@@ -322,7 +322,7 @@ Ext.define('Ext.data.Store', {
         if (config) {
             if (config.buffered) {
                 //<debug>
-                if (this.self !== Ext.data.Store) {
+                if (this.self !== Ext.data.Storeqw) {
                     Ext.raise('buffered config not supported on derived Store classes. ' +
                                     'Please derive from Ext.data.BufferedStore.');
                 }
@@ -335,7 +335,7 @@ Ext.define('Ext.data.Store', {
 
             //<debug>
             if (config.remoteGroup) {
-                Ext.log.warn('Ext.data.Store: remoteGroup has been removed. ' +
+                Ext.log.warn('Ext.data.Storeqw: remoteGroup has been removed. ' +
                              'Use remoteSort instead.');
             }
             //</debug>
@@ -344,25 +344,25 @@ Ext.define('Ext.data.Store', {
         /**
          * @event beforeprefetch
          * Fires before a prefetch occurs. Return `false` to cancel.
-         * @param {Ext.data.Store} this
+         * @param {Ext.data.Storeqw} this
          * @param {Ext.data.operation.Operation} operation The associated operation.
          */
         /**
          * @event groupchange
          * Fired whenever the grouping in the grid changes.
-         * @param {Ext.data.Store} store The store.
+         * @param {Ext.data.Storeqw} store The store.
          * @param {Ext.util.Grouper} grouper The grouper object.
          */
         /**
          * @event groupschange
          * Fired whenever the multi grouping in the grid changes.
-         * @param {Ext.data.Store} store The store.
+         * @param {Ext.data.Storeqw} store The store.
          * @param {Ext.util.GrouperCollection} groupers The groupers collection.
          */
         /**
          * @event prefetch
          * Fires whenever records have been prefetched.
-         * @param {Ext.data.Store} this
+         * @param {Ext.data.Storeqw} this
          * @param {Ext.data.Model[]} records An array of records.
          * @param {Boolean} successful `true` if the operation was successful.
          * @param {Ext.data.operation.Operation} operation The associated operation.
@@ -370,7 +370,7 @@ Ext.define('Ext.data.Store', {
         /**
          * @event filterchange
          * Fired whenever the filter set changes.
-         * @param {Ext.data.Store} store The store.
+         * @param {Ext.data.Storeqw} store The store.
          * @param {Ext.util.Filter[]} filters The array of Filter objects.
          */
 
@@ -1255,7 +1255,7 @@ Ext.define('Ext.data.Store', {
          *
          * **Note** Used internally.
          *
-         * @param {Ext.data.Store} store The Store object
+         * @param {Ext.data.Storeqw} store The Store object
          */
         me.fireEvent('commit', me);
     },
@@ -1348,7 +1348,7 @@ Ext.define('Ext.data.Store', {
          *
          * **Note** Used internally.
          *
-         * @param {Ext.data.Store} store The Store object
+         * @param {Ext.data.Storeqw} store The Store object
          */
         me.fireEvent('reject', me);
     },

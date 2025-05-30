@@ -1,10 +1,10 @@
 /**
- * A custom {@link Ext.data.Store} for the {@link Ext.grid.property.Grid}. This class handles
+ * A custom {@link Ext.data.Storeqw} for the {@link Ext.grid.property.Grid}. This class handles
  * the mapping between the custom data source objects supported by the grid and the
- * {@link Ext.grid.property.Property} format used by the {@link Ext.data.Store} base class.
+ * {@link Ext.grid.property.Property} format used by the {@link Ext.data.Storeqw} base class.
  */
 Ext.define('Ext.grid.property.Store', {
-    extend: 'Ext.data.Store',
+    // extend: 'Ext.data.Storeqw',
     alternateClassName: 'Ext.grid.PropertyStore',
 
     requires: [

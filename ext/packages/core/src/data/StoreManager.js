@@ -3,7 +3,7 @@
  * can be assigned by setting the {@link Ext.data.AbstractStore#storeId storeId} property. When
  * a store is in the StoreManager, it can be referred to via it's identifier:
  *
- *     Ext.create('Ext.data.Store', {
+ *     Ext.create('Ext.data.Storeqw', {
  *         model: 'SomeModel',
  *         storeId: 'myStore'
  *     });
@@ -15,7 +15,7 @@
  * If a store is registered with the StoreManager, you can also refer to the store by its
  * identifier when registering it with any Component that consumes data from a store:
  *
- *     Ext.create('Ext.data.Store', {
+ *     Ext.create('Ext.data.Storeqw', {
  *         model: 'SomeModel',
  *         storeId: 'myStore'
  *     });
@@ -30,7 +30,7 @@ Ext.define('Ext.data.StoreManager', {
     extend: 'Ext.util.MixedCollection',
     alternateClassName: [
         'Ext.StoreMgr',
-        'Ext.data.StoreMgr',
+        'Ext.data.StoreqwMgr',
         'Ext.StoreManager'
     ],
 
@@ -47,9 +47,9 @@ Ext.define('Ext.data.StoreManager', {
 
     /**
      * Registers one or more Stores with the StoreManager. You do not normally need to register
-     * stores manually. Any store initialized with a {@link Ext.data.Store#storeId} will be
+     * stores manually. Any store initialized with a {@link Ext.data.Storeqw#storeId} will be
      * auto-registered.
-     * @param {Ext.data.Store...} stores Any number of Store instances
+     * @param {Ext.data.Storeqw...} stores Any number of Store instances
      */
     register: function() {
         var i, s;
@@ -77,7 +77,7 @@ Ext.define('Ext.data.StoreManager', {
      * configuration
      * @param {String} [defaultType] The store type to create when used with store configuration
      * and there is no type specified on the config.
-     * @return {Ext.data.Store}
+     * @return {Ext.data.Storeqw}
      */
     lookup: function(store, defaultType) {
         var first, data, arrays, fields, i, len;
@@ -207,11 +207,11 @@ Ext.define('Ext.data.StoreManager', {
             config.storeId = id;
         }
 
-        if (config instanceof Ext.data.Store) {
+        if (config instanceof Ext.data.Storeqw) {
             store = config;
         }
         else {
-            store = new Ext.data.Store(config);
+            store = new Ext.data.Storeqw(config);
         }
 
         Ext.data.StoreManager.register(store);

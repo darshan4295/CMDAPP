@@ -1,10 +1,10 @@
 /**
- * A mixin which allows a data component to be sorted. This is used by e.g. {@link Ext.data.Store}
+ * A mixin which allows a data component to be sorted. This is used by e.g. {@link Ext.data.Storeqw}
  * and {@link Ext.data.TreeStore}.
  *
  * **NOTE**: This mixin is mainly for internal use and most users should not need to use it
  * directly. It is more likely you will want to use one of the component classes that import
- * this mixin, such as {@link Ext.data.Store} or {@link Ext.data.TreeStore}.
+ * this mixin, such as {@link Ext.data.Storeqw} or {@link Ext.data.TreeStore}.
  */
 Ext.define("Ext.util.Sortable", {
     /**
@@ -266,7 +266,7 @@ Ext.define("Ext.util.Sortable", {
      * @protected
      * Returns the number of Sorters which apply to this Sortable.
      *
-     * May be overridden in subclasses. {@link Ext.data.Store Store} in particlar overrides
+     * May be overridden in subclasses. {@link Ext.data.Storeqw Store} in particlar overrides
      * this because its groupers must contribute to the sorter count so that the sort method above
      * executes doSort.
      */

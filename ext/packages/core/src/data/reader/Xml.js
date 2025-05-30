@@ -8,7 +8,7 @@
  *         fields: ['id', 'name', 'email']
  *     });
  *
- *     var store = Ext.create('Ext.data.Store', {
+ *     var store = Ext.create('Ext.data.Storeqw', {
  *         model: 'User',
  *         proxy: {
  *             type: 'ajax',
@@ -25,7 +25,7 @@
  * {@link Ext.data.Model Model} docs if you're not already familiar with them.
  *
  * We created the simplest type of XML Reader possible by simply telling our
- * {@link Ext.data.Store Store}'s {@link Ext.data.proxy.Proxy Proxy} that we want a XML Reader.
+ * {@link Ext.data.Storeqw Store}'s {@link Ext.data.proxy.Proxy Proxy} that we want a XML Reader.
  * The Store automatically passes the configured model to the Store, so it is as if we passed
  * this instead:
  *

@@ -112,11 +112,11 @@ Ext.define('Ext.ux.Explorer', {
 
     applyContentView: function(contentView) {
         /**
-         * @property {Ext.data.Store} contentStore
+         * @property {Ext.data.Storeqw} contentStore
          * @private
          * The backing store for the content view
          */
-        var contentStore = this.contentStore = new Ext.data.Store({
+        var contentStore = this.contentStore = new Ext.data.Storeqw({
             model: this.getStore().model
         });
 

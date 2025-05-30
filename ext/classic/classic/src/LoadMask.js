@@ -49,7 +49,7 @@ Ext.define('Ext.LoadMask', {
      */
 
     /**
-     * @cfg {Ext.data.Store} store
+     * @cfg {Ext.data.Storeqw} store
      * Optional Store to which the mask is bound. The mask is displayed when a load request
      * is issued, and hidden on either load success, or load fail.
      */
@@ -403,7 +403,7 @@ Ext.define('Ext.LoadMask', {
 
     /**
      * Changes the data store bound to this LoadMask.
-     * @param {Ext.data.Store} store The store to bind to this LoadMask
+     * @param {Ext.data.Storeqw} store The store to bind to this LoadMask
      * @param [initial]
      */
     bindStore: function(store, initial) {

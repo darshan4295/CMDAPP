@@ -5,7 +5,7 @@
  * reduce key overhead but also requires that all records and field be saved for any change.
  */
 Ext.define('Ext.data.ClientStore', {
-    extend: 'Ext.data.Store',
+    // extend: 'Ext.data.Storeqw',
     alias: 'store.clientstorage',
 
     requires: [

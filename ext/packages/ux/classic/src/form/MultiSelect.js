@@ -110,11 +110,11 @@ Ext.define('Ext.ux.form.MultiSelect', {
     dragText: '{0} Item{1}',
 
     /**
-     * @cfg {Ext.data.Store/Array} store The data source to which this MultiSelect is bound
+     * @cfg {Ext.data.Storeqw/Array} store The data source to which this MultiSelect is bound
      * (defaults to `undefined`).
      * Acceptable values for this property are:
      * <div class="mdetail-params"><ul>
-     * <li><b>any {@link Ext.data.Store Store} subclass</b></li>
+     * <li><b>any {@link Ext.data.Storeqw Store} subclass</b></li>
      * <li><b>an Array</b> : Arrays will be converted to a {@link Ext.data.ArrayStore} internally.
      * <div class="mdetail-params"><ul>
      * <li><b>1-dimensional array</b> : (e.g., <tt>['Foo','Bar']</tt>)<div class="sub-desc">

@@ -14,7 +14,7 @@ Ext.define('Ext.grid.plugin.filterbar.filters.List', {
 
     config: {
         /**
-         * @cfg {String[]/Ext.data.Store} options
+         * @cfg {String[]/Ext.data.Storeqw} options
          *
          * An array of values or a store configuration
          */

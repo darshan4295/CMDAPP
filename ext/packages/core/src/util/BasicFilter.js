@@ -8,7 +8,7 @@ Ext.define('Ext.util.BasicFilter', {
         /**
          * @cfg {String} id
          * An identifier by which this Filter is known, for example, as a member of a
-         * {@link Ext.data.Store#cfg-filters Store's filters collection}.
+         * {@link Ext.data.Storeqw#cfg-filters Store's filters collection}.
          *
          * Identified filters are manageable in such collections because they can be found
          * or removed using their `id`.

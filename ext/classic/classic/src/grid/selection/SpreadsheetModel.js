@@ -14,7 +14,7 @@
  * # Example usage
  *
  *     @example
- *     var store = Ext.create('Ext.data.Store', {
+ *     var store = Ext.create('Ext.data.Storeqw', {
  *         fields: ['name', 'email', 'phone'],
  *         data: [
  *             { name: 'Lisa', email: 'lisa@simpsons.com', phone: '555-111-1224' },
@@ -563,9 +563,9 @@ Ext.define('Ext.grid.selection.SpreadsheetModel', {
      * Adds the checkbox header if the columns have been reconfigured.
      * Also adds the row numberer.
      * @param {Ext.panel.Table} grid
-     * @param {Ext.data.Store} store
+     * @param {Ext.data.Storeqw} store
      * @param {Object[]} columns
-     * @param {Ext.data.Store} oldStore
+     * @param {Ext.data.Storeqw} oldStore
      * @param {Object[]} oldColumns
      * @private
      */
@@ -715,7 +715,7 @@ Ext.define('Ext.grid.selection.SpreadsheetModel', {
      * This method allows programmatic selection of the cell range.
      *
      *     @example
-     *     var store = Ext.create('Ext.data.Store', {
+     *     var store = Ext.create('Ext.data.Storeqw', {
      *         fields  : ['name', 'email', 'phone'],
      *         data    : {
      *             items : [

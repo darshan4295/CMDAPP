@@ -39,7 +39,7 @@
  *         fields: ['id', 'name', 'email']
  *     });
  *
- *     var store = Ext.create('Ext.data.Store', {
+ *     var store = Ext.create('Ext.data.Storeqw', {
  *         model: 'User',
  *         proxy: {
  *             type: 'jsonp',
@@ -58,7 +58,7 @@
  *
  * This script tag can be customized using the {@link #callbackKey} configuration. For example:
  *
- *     var store = Ext.create('Ext.data.Store', {
+ *     var store = Ext.create('Ext.data.Storeqw', {
  *         model: 'User',
  *         proxy: {
  *             type: 'jsonp',

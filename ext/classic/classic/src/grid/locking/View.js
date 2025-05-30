@@ -289,7 +289,7 @@ Ext.define('Ext.grid.locking.View', {
 
     /**
      * Changes the data store bound to this view and refreshes it.
-     * @param {Ext.data.Store} store The store to bind to this view
+     * @param {Ext.data.Storeqw} store The store to bind to this view
      * @since 3.4.0
      */
     onBindStore: function(store) {

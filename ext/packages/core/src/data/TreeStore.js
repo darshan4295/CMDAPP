@@ -51,7 +51,7 @@
  * the {@link #event-refresh} event on the store.
  */
 Ext.define('Ext.data.TreeStore', {
-    extend: 'Ext.data.Store',
+    // extend: 'Ext.data.Storeqw',
     alias: 'store.tree',
     requires: [
         'Ext.util.Sorter',

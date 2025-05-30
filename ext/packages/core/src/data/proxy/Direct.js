@@ -186,7 +186,7 @@
  *      });
  *      
  *      Ext.define('Users', {
- *          extend: 'Ext.data.Store',
+ *          extend: 'Ext.data.Storeqw',
  *          model: 'User',
  *          proxy: {
  *              type: 'direct',

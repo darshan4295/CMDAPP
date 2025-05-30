@@ -5,7 +5,7 @@
  * display value area.
  *
  *     @example
- *     var shows = Ext.create('Ext.data.Store', {
+ *     var shows = Ext.create('Ext.data.Storeqw', {
  *         fields: ['id','show'],
  *         data: [
  *             {id: 0, show: 'Battlestar Galactica'},
@@ -49,7 +49,7 @@ Ext.define('Ext.form.field.Tag', {
 
     requires: [
         'Ext.selection.Model',
-        'Ext.data.Store',
+        // 'Ext.data.Storeqw',
         'Ext.data.ChainedStore',
         'Ext.view.TagKeyNav'
     ],
@@ -504,7 +504,7 @@ Ext.define('Ext.form.field.Tag', {
         if (store) {
             // We collect picked records in a value store so that a selection model
             // can track selection
-            me.valueStore = new Ext.data.Store({
+            me.valueStore = new Ext.data.Storeqw({
                 model: store.getModel(),
 
                 // Assign a proxy here so we don't get the proxy from the model

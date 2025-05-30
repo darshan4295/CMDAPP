@@ -206,7 +206,7 @@
  * Note that nodes have several more {@link Ext.data.Model#cfg-fields fields} in order to describe
  * their state within the hierarchy.
  *
- * If you add store listeners to the {@link Ext.data.Store#event-update update} event, then you will
+ * If you add store listeners to the {@link Ext.data.Storeqw#event-update update} event, then you will
  * receive notification when any of this state changes. You should check the array of modified field
  * names passed to the listener to decide whether the listener should take action
  * or ignore the event.

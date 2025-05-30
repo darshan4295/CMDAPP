@@ -21,7 +21,7 @@
  * A grid with editor for the name and the email columns:
  *
  *     @example
- *     Ext.create('Ext.data.Store', {
+ *     Ext.create('Ext.data.Storeqw', {
  *         storeId: 'simpsonsStore',
  *         fields:[ 'name', 'email', 'phone'],
  *         data: [

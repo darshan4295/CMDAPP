@@ -14,7 +14,7 @@
  *        }
  *      });
  *
- *     Ext.create("Ext.data.Store", {
+ *     Ext.create("Ext.data.Storeqw", {
  *        model: "User",
  *        storeId: "Users",
  *        proxy: {
@@ -35,7 +35,7 @@
  *
  * To recreate a table use:
  *
- *     Ext.data.Store.sync() or Ext.data.Model.save()
+ *     Ext.data.Storeqw.sync() or Ext.data.Model.save()
  */
 Ext.define('Ext.data.proxy.Sql', {
     alias: 'proxy.sql',

@@ -5,7 +5,7 @@
  * Example usage:
  *
  *     @example
- *     var store = Ext.create('Ext.data.Store', {
+ *     var store = Ext.create('Ext.data.Storeqw', {
  *         fields: ['name', 'email', 'phone', 'active'],
  *         data: [
  *             { name: 'Lisa', email: 'lisa@simpsons.com', phone: '555-111-1224', active: true },

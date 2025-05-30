@@ -8,11 +8,11 @@
  * to the server side, which the server needs to interpret and then respond with the appropriate
  * data.
  *
- * Ext.toolbar.Paging is a specialized toolbar that is bound to a {@link Ext.data.Store}
- * and provides automatic paging control. This Component {@link Ext.data.Store#method-load load}s
+ * Ext.toolbar.Paging is a specialized toolbar that is bound to a {@link Ext.data.Storeqw}
+ * and provides automatic paging control. This Component {@link Ext.data.Storeqw#method-load load}s
  * blocks of data into the {@link #store} by passing parameters used for paging criteria.
  *
- * Note: The {@link #store} specified must support paging as defined by `Ext.data.Store`.
+ * Note: The {@link #store} specified must support paging as defined by `Ext.data.Storeqw`.
  * In particular, this means that `Ext.data.ChainedStore` is not supported.
  *
  * {@img Ext.toolbar.Paging/Ext.toolbar.Paging.png Ext.toolbar.Paging component}
@@ -21,7 +21,7 @@
  *
  *     var itemsPerPage = 2; // set the number of items you want per page
  *
- *     Ext.create('Ext.data.Store', {
+ *     Ext.create('Ext.data.Storeqw', {
  *         id: 'simpsonsStore',
  *         autoLoad: false,
  *         fields: ['name', 'email', 'phone'],
@@ -85,9 +85,9 @@
  *         }
  *     });
  *
- * If using {@link Ext.data.Store#autoLoad store's autoLoad} configuration:
+ * If using {@link Ext.data.Storeqw#autoLoad store's autoLoad} configuration:
  *
- *     var myStore = Ext.create('Ext.data.Store', {
+ *     var myStore = Ext.create('Ext.data.Storeqw', {
  *         autoLoad: {start: 0, limit: 25},
  *         ...
  *     });
@@ -130,12 +130,12 @@ Ext.define('Ext.toolbar.Paging', {
     ],
 
     /**
-     * @cfg {Ext.data.Store/String} store
+     * @cfg {Ext.data.Storeqw/String} store
      * The data source to which the paging toolbar is bound (must be the same store instance
      * used in the grid / tree). Acceptable values for this property are:
      *
-     *   - Any {@link Ext.data.Store Store} class or subclass
-     *   - An {@link Ext.data.Store#storeId ID of a store}
+     *   - Any {@link Ext.data.Storeqw Store} class or subclass
+     *   - An {@link Ext.data.Storeqw#storeId ID of a store}
      *
      * If no `store` is provided, the `store` of the owner component (if there is an
      * owner and it has a store) is used. The owner store is bound when this component
@@ -250,7 +250,7 @@ Ext.define('Ext.toolbar.Paging', {
      * - `pageCount`: Number
      *
      *   The total number of pages (calculated from the total number of records in the dataset
-     *   as returned by the server and the current {@link Ext.data.Store#pageSize pageSize})
+     *   as returned by the server and the current {@link Ext.data.Storeqw#pageSize pageSize})
      *
      * - `toRecord`: Number
      *

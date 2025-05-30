@@ -39,7 +39,7 @@
  *          // content is responseText of ajax response
  *      });
  *
- * To adapt the Ext JS `{@link Ext.data.Store store}` to use a Promise, you might do
+ * To adapt the Ext JS `{@link Ext.data.Storeqw store}` to use a Promise, you might do
  * something like this:
  *
  *      loadCompanies: function() {

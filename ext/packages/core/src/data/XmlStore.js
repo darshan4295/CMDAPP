@@ -1,5 +1,5 @@
 /**
- * Small helper class to make creating {@link Ext.data.Store}s from XML data easier.
+ * Small helper class to make creating {@link Ext.data.Storeqw}s from XML data easier.
  * An XmlStore will be automatically configured with a {@link Ext.data.reader.Xml}.
  *
  * A store configuration would be something like:
@@ -56,7 +56,7 @@
  * {@link Ext.data.reader.Xml XmlReader}.
  */
 Ext.define('Ext.data.XmlStore', {
-    extend: 'Ext.data.Store',
+    // extend: 'Ext.data.Storeqw',
     alias: 'store.xml',
 
     requires: [

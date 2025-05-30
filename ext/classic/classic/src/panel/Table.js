@@ -225,20 +225,20 @@ Ext.define('Ext.panel.Table', {
      */
 
     /**
-     * @cfg {Ext.data.Store/String/Object} store (required)
+     * @cfg {Ext.data.Storeqw/String/Object} store (required)
      * The data source to which the grid / tree is bound. Acceptable values for this 
      * property are:
      *
-     *   - **any {@link Ext.data.Store Store} class / subclass**
-     *   - **an {@link Ext.data.Store#storeId ID of a store}**
-     *   - **a {@link Ext.data.Store Store} config object**.  When passing a config you can 
+     *   - **any {@link Ext.data.Storeqw Store} class / subclass**
+     *   - **an {@link Ext.data.Storeqw#storeId ID of a store}**
+     *   - **a {@link Ext.data.Storeqw Store} config object**.  When passing a config you can 
      *   specify the store type by alias.  Passing a config object with a store type will 
      *   dynamically create a new store of that type when the grid / tree is instantiated.
      *
      * For example:
      * 
      *     Ext.define('MyApp.store.Customers', {
-     *         extend: 'Ext.data.Store',
+     *         extend: 'Ext.data.Storeqw',
      *         alias: 'store.customerstore',
      *         fields: ['name']
      *     });
@@ -629,7 +629,7 @@ Ext.define('Ext.panel.Table', {
         }
 
         // Look up the configured Store. If none configured, use the fieldless, empty Store
-        // defined in Ext.data.Store. If store configuration is present with no storeId
+        // defined in Ext.data.Storeqw. If store configuration is present with no storeId
         // we will be creating a new Store instance unique to this Panel, and we should
         // destroy it as well.
         store = me.store;
@@ -1642,7 +1642,7 @@ Ext.define('Ext.panel.Table', {
 
     /**
      * Returns the store associated with this Panel.
-     * @return {Ext.data.Store} The store
+     * @return {Ext.data.Storeqw} The store
      */
     getStore: function() {
         return this.store;
@@ -2254,13 +2254,13 @@ Ext.define('Ext.panel.Table', {
             me.storeRelayers = me.relayEvents(store, [
                 /**
                  * @event filterchange
-                 * @inheritdoc Ext.data.Store#filterchange
+                 * @inheritdoc Ext.data.Storeqw#filterchange
                  */
                 'filterchange',
 
                 /**
                  * @event groupchange
-                 * @inheritdoc Ext.data.Store#groupchange
+                 * @inheritdoc Ext.data.Storeqw#groupchange
                  */
                 'groupchange'
             ]);
@@ -2322,7 +2322,7 @@ Ext.define('Ext.panel.Table', {
      * A convenience method that fires {@link #event-reconfigure} with the store param.
      * To set the store AND change columns, use the {@link #method-reconfigure reconfigure method}.
      *
-     * @param {Ext.data.Store} [store] The new store.
+     * @param {Ext.data.Storeqw} [store] The new store.
      */
     setStore: function(store) {
         var me = this;
@@ -2379,7 +2379,7 @@ Ext.define('Ext.panel.Table', {
      * If you're using locked columns, the {@link #enableLocking} config should be set 
      * to `true` before the reconfigure method is executed.
      *
-     * @param {Ext.data.Store/Object} [store] The new store instance or store config. You can 
+     * @param {Ext.data.Storeqw/Object} [store] The new store instance or store config. You can 
      * pass `null` if no new store.
      * @param {Object[]} [columns] An array of column configs
      * @param {Boolean} allowUnbind (private)

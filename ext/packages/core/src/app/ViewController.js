@@ -292,10 +292,10 @@ Ext.define('Ext.app.ViewController', {
     },
 
     /**
-     * Get a {@link Ext.data.Store} attached to the {@link #getViewModel ViewModel} attached to
+     * Get a {@link Ext.data.Storeqw} attached to the {@link #getViewModel ViewModel} attached to
      * this controller. See {@link Ext.app.ViewModel#getStore}.
      * @param {String} name The name of the store.
-     * @return {Ext.data.Store} The store. `null` if no store is found, or there is no 
+     * @return {Ext.data.Storeqw} The store. `null` if no store is found, or there is no 
      * {@link Ext.app.ViewModel} attached to the view for this controller.
      *
      * @since 5.0.0

@@ -486,25 +486,25 @@ Ext.define('Ext.grid.locking.Lockable', {
         me.storeRelayers = me.relayEvents(store, [
             /**
              * @event filterchange
-             * @inheritdoc Ext.data.Store#filterchange
+             * @inheritdoc Ext.data.Storeqw#filterchange
              */
             'filterchange',
 
             /**
              * @event groupchange
-             * @inheritdoc Ext.data.Store#groupchange
+             * @inheritdoc Ext.data.Storeqw#groupchange
              */
             'groupchange',
 
             /**
              * @event beforeload
-             * @inheritdoc Ext.data.Store#beforeload
+             * @inheritdoc Ext.data.Storeqw#beforeload
              */
             'beforeload',
 
             /**
              * @event load
-             * @inheritdoc Ext.data.Store#load
+             * @inheritdoc Ext.data.Storeqw#load
              */
             'load'
         ]);

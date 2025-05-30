@@ -4,7 +4,7 @@
  * {@link Ext.grid.column.Column} for more details.
  *
  *     @example
- *     var store = Ext.create('Ext.data.Store', {
+ *     var store = Ext.create('Ext.data.Storeqw', {
  *        fields: [
  *            {name: 'framework', type: 'string'},
  *            {name: 'rocks', type: 'boolean'}

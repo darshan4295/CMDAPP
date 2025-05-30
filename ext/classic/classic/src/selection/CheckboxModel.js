@@ -3,7 +3,7 @@
  * select or deselect rows. The default mode for this selection model is MULTI.
  *
  *       @example
- *       var store = Ext.create('Ext.data.Store', {
+ *       var store = Ext.create('Ext.data.Storeqw', {
  *           fields: ['name', 'email', 'phone'],
  *           data: [{
  *               name: 'Lisa',
@@ -333,7 +333,7 @@ Ext.define('Ext.selection.CheckboxModel', {
      * have been reconfigured.
      * @private
      * @param {Ext.panel.Table} grid
-     * @param {Ext.data.Store} store
+     * @param {Ext.data.Storeqw} store
      * @param {Object[]} columns
      */
     onReconfigure: function(grid, store, columns) {

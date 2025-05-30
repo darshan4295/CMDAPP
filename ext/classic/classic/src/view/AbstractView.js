@@ -56,7 +56,7 @@ Ext.define('Ext.view.AbstractView', {
         /**
          * @prop {Number} [updateDelay=200] Global config for use when using
          * {@link #throttledUpdate throttled view updating} if the data in the backing
-         * {@link Ext.data.Store store} is being changed rapidly, for example receiving changes
+         * {@link Ext.data.Storeqw store} is being changed rapidly, for example receiving changes
          * from the server through a WebSocket connection.
          *
          * To avoid too-frequent view updates overloading the browser with style recalculation,
@@ -189,8 +189,8 @@ Ext.define('Ext.view.AbstractView', {
 
     config: {
         /**
-         * @cfg {Ext.data.Store} store
-         * The {@link Ext.data.Store} to bind this DataView to.
+         * @cfg {Ext.data.Storeqw} store
+         * The {@link Ext.data.Storeqw} to bind this DataView to.
          * @since 2.3.0
          */
         store: 'ext-empty-store',
@@ -617,7 +617,7 @@ Ext.define('Ext.view.AbstractView', {
         me.addCmpEvents();
 
         // Look up the configured Store. If none configured, use the fieldless,
-        // empty Store defined in Ext.data.Store.
+        // empty Store defined in Ext.data.Storeqw.
         store = me.store = Ext.data.StoreManager.lookup(me.store || 'ext-empty-store');
 
         // Use the provided store as the data source unless a Feature or plugin
@@ -1783,7 +1783,7 @@ Ext.define('Ext.view.AbstractView', {
 
     /**
      * Changes the data store bound to this view and refreshes it.
-     * @param {Ext.data.Store} store The store to bind to this view
+     * @param {Ext.data.Storeqw} store The store to bind to this view
      * @param {Object} initial
      * @since 3.4.0
      */

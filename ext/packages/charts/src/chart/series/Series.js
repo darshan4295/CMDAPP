@@ -183,8 +183,8 @@ Ext.define('Ext.chart.series.Series', {
      * @event storechange
      * Fires when the store of the series changes.
      * @param {Ext.chart.series.Series} series
-     * @param {Ext.data.Store} newStore
-     * @param {Ext.data.Store} oldStore
+     * @param {Ext.data.Storeqw} newStore
+     * @param {Ext.data.Storeqw} oldStore
      */
 
     config: {

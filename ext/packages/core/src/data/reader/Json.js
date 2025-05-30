@@ -8,7 +8,7 @@
  *         fields: ['id', 'name', 'email']
  *     });
  *
- *     var store = Ext.create('Ext.data.Store', {
+ *     var store = Ext.create('Ext.data.Storeqw', {
  *         model: 'User',
  *         proxy: {
  *             type: 'ajax',
@@ -23,7 +23,7 @@
  * {@link Ext.data.Model Model} docs if you're not already familiar with them.
  *
  * We created the simplest type of JSON Reader possible by simply telling our
- * {@link Ext.data.Store Store}'s {@link Ext.data.proxy.Proxy Proxy} that we want a JSON Reader.
+ * {@link Ext.data.Storeqw Store}'s {@link Ext.data.proxy.Proxy Proxy} that we want a JSON Reader.
  * The Store automatically passes the configured model to the Store, so it is as if we passed
  * this instead:
  *
@@ -192,7 +192,7 @@
  * the application code. This is done simply enough by handling the metachange event on either
  * the store or the proxy, e.g.:
  *
- *     var store = Ext.create('Ext.data.Store', {
+ *     var store = Ext.create('Ext.data.Storeqw', {
  *         ...
  *         listeners: {
  *             'metachange': function(store, meta) {

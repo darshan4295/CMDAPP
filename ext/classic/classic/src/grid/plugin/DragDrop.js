@@ -37,7 +37,7 @@
  * grid view as well as its owning Grid: `{@link #beforedrop}` and `{@link #drop}`.
  *
  *     @example
- *     var store = Ext.create('Ext.data.Store', {
+ *     var store = Ext.create('Ext.data.Storeqw', {
  *         fields: ['name'],
  *         data: [
  *             ["Lisa"],

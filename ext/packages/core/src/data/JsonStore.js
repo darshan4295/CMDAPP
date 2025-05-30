@@ -1,5 +1,5 @@
 /**
- * Small helper class to make creating {@link Ext.data.Store}s from JSON data easier.
+ * Small helper class to make creating {@link Ext.data.Storeqw}s from JSON data easier.
  * A JsonStore will be automatically configured with a {@link Ext.data.reader.Json}.
  *
  * A store configuration would be something like:
@@ -17,7 +17,7 @@
  *             }
  *         },
  *
- *         //alternatively, a Model name can be given (see Ext.data.Store for an example)
+ *         //alternatively, a Model name can be given (see Ext.data.Storeqw for an example)
  *         fields: ['name', 'url', {name: 'size', type: 'float'}, {name: 'lastmod', type: 'date'}]
  *     });
  *
@@ -40,7 +40,7 @@
  * An object literal of this form could also be used as the {@link #cfg-data} config option.
  */
 Ext.define('Ext.data.JsonStore', {
-    extend: 'Ext.data.Store',
+    // extend: 'Ext.data.Storeqw',
     alias: 'store.json',
 
     requires: [

@@ -13,7 +13,7 @@
  * In the example below, we've enabled MULTI mode. This means that multiple rows can be selected.
  *
  *     @example
- *     var store = Ext.create('Ext.data.Store', {
+ *     var store = Ext.create('Ext.data.Storeqw', {
  *         fields: ['name', 'email', 'phone'],
  *         data: [
  *             { name: 'Lisa', email: 'lisa@simpsons.com', phone: '555-111-1224' },

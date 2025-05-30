@@ -11,7 +11,7 @@
  * model, only one record exists with a given `id`. This means that all edits of that
  * record are properly targeted at that one instance.
  *
- * Similarly, when associations are loaded, the `Ext.data.Store` created to hold the
+ * Similarly, when associations are loaded, the `Ext.data.Storeqw` created to hold the
  * associated records is tracked by the Session. So all requests for the "OrderItems" of
  * a particular Order id will result in the same Store. Adding and removing items from
  * that Order then is sure to remain consistent.
